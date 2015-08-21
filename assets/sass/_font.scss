@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('../fonts/bootstrap/glyphicons-halflings-regular.eot');
+    src: url('../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bootstrap/glyphicons-halflings-regular.woff2') format('woff2'),
+         url('../fonts/bootstrap/glyphicons-halflings-regular.woff') format('woff'),
+         url('../fonts/bootstrap/glyphicons-halflings-regular.ttf') format('truetype'),
+         url('../fonts/bootstrap/glyphicons-halflings-regular.svg#sfu_helvetica') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova';
+  src: url('../fonts/custom/ProximaNova-Black.otf'),
+       url('../fonts/custom/ProximaNova-Bold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova';
+  src: url('../fonts/custom/ProximaNova-Boldlt.otf'),
+       url('../fonts/custom/ProximaNova-Extrabold.otf');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova';
+  src: url('../fonts/custom/ProximaNova-Light.otf'),
+       url('../fonts/custom/ProximaNova-Regular.otf'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova';
+  src: url('../fonts/custom/ProximaNova-LightItalic.otf'),
+       url('../fonts/custom/ProximaNova-RegItalic.otf'),  
+       url('../fonts/custom/ProximaNova-RegularItalic.otf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'proxima_nova_soft';
+  src: url('../fonts/custom/ProximaNovaSoft-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova_soft';
+  src: url('../fonts/custom/ProximaNovaSoft-Bold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'sfu_helvetica';
+    src: url('../fonts/custom/sfuhelveticalight-webfont.eot');
+    src: url('../fonts/custom/sfuhelveticalight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/custom/sfuhelveticalight-webfont.woff2') format('woff2'),
+         url('../fonts/custom/sfuhelveticalight-webfont.woff') format('woff'),
+         url('../fonts/custom/sfuhelveticalight-webfont.ttf') format('truetype'),
+         url('../fonts/custom/sfuhelveticalight-webfont.svg#sfu_helvetica') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sfu_helvetica';
+    src: url('../fonts/custom/sfuhelveticabold-webfont.eot');
+    src: url('../fonts/custom/sfuhelveticabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/custom/sfuhelveticabold-webfont.woff2') format('woff2'),
+         url('../fonts/custom/sfuhelveticabold-webfont.woff') format('woff'),
+         url('../fonts/custom/sfuhelveticabold-webfont.ttf') format('truetype'),
+         url('../fonts/custom/sfuhelveticabold-webfont.svg#sfu_helvetica') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sfu_helvetica';
+    src: url('../fonts/custom/sfuhelveticablack-webfont.eot');
+    src: url('../fonts/custom/sfuhelveticablack-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/custom/sfuhelveticablack-webfont.woff2') format('woff2'),
+         url('../fonts/custom/sfuhelveticablack-webfont.woff') format('woff'),
+         url('../fonts/custom/sfuhelveticablack-webfont.ttf') format('truetype'),
+         url('../fonts/custom/sfuhelveticablack-webfont.svg#sfu_helvetica') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+// UTM Bebas
+@font-face {
+  font-family: 'utm_bebas';
+  src: url('../fonts/custom/UTM Bebas.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Helvetica Neue
+@font-face {
+  font-family: 'helvetica_neue';
+  src: url('../fonts/custom/HelveticaNeueLTStd Lt.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'helvetica_neue';
+  src: url('../fonts/custom/HelveticaNeueBold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+// @font-face {
+//   font-family: 'helvetica_neue';
+//   src: url('../fonts/custom/HelveticaNeue-Thin.otf');
+//   src: url('../fonts/custom/HelveticaNeue-ThinCond.otf');
+//        url('../fonts/custom/HelveticaNeue-ThinCondObl.otf');
+//        url('../fonts/custom/HelveticaNeue-ThinExt.otf');
+//        url('../fonts/custom/HelveticaNeue-ThinExtObl.otf');
+//        url('../fonts/custom/HelveticaNeue-ThinItalic.otf');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'helvetica_neue';
+//   src: url('../fonts/custom/HelveticaNeue-Heavy.otf');
+//   src: url('../fonts/custom/HelveticaNeue-HeavyCond.otf');
+//        url('../fonts/custom/HelveticaNeue-HeavyCondObl.otf');
+//        url('../fonts/custom/HelveticaNeue-HeavyExt.otf');
+//        url('../fonts/custom/HelveticaNeue-HeavyExtObl.otf');
+//        url('../fonts/custom/HelveticaNeue-HeavyItalic.otf');
+//   font-weight: 900;
+//   font-style: normal;
+// }
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/font-awesome/fontawesome-webfont.eot");
+  src: url("../fonts/font-awesome/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), 
+       url("../fonts/font-awesome/fontawesome-webfont.woff2") format("woff2"), 
+       url("../fonts/font-awesome/fontawesome-webfont.woff") format("woff"), 
+       url("../fonts/font-awesome/fontawesome-webfont.ttf") format("truetype"), 
+       url("../fonts/font-awesome/fontawesome-webfont.svg#FontAwesome") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}

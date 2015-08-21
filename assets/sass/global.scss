@@ -1,0 +1,3636 @@
+// Import Bootstrap Compass integration
+@import "bootstrap-compass";
+
+// Import custom Bootstrap variables
+@import "bootstrap-variables";
+
+// Import Bootstrap for Sass
+@import "bootstrap";
+
+// ImportFont-Awesome Compass integration
+@import "font-awesome-compass";
+
+// Import Font-Awesome for Sass
+@import "font-awesome";
+
+// CSS GLOBAL RULES
+body {
+	font-family: $font-family;
+	background-color: $light-background-color;
+	a {
+		&, &:active, &:focus, &:visited, &:hover {
+			text-decoration: none;
+		}
+	}
+}
+.mCSB_inside > .mCSB_container {
+	margin-right: 15px;
+	z-index: 1;
+}
+.mCSB_scrollTools .mCSB_draggerRail{
+	background-color: $darkest-background-color; background-color: rgba(red($darkest-background-color), green($darkest-background-color), blue($darkest-background-color), 0.4);
+	filter: "alpha(opacity=40)"; -ms-filter: "alpha(opacity=40)"; 
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+	background-color: $primary-color2; background-color: rgba(0, 101, 179, 0.75);
+	filter: "alpha(opacity=75)"; -ms-filter: "alpha(opacity=75)"; 
+}
+
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{
+	background-color: $primary-color2; background-color: rgba(0, 101, 179, 0.85);
+	filter: "alpha(opacity=85)"; -ms-filter: "alpha(opacity=85)"; 
+}
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{
+	background-color: $primary-color2; background-color: rgba(0, 101, 179, 0.9);
+	filter: "alpha(opacity=90)"; -ms-filter: "alpha(opacity=90)"; 
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+.no-padding {
+	padding: 0;
+}
+
+nav.navbar.navbar-default {
+	margin-bottom: 0;
+	border: 0;
+	border-radius: 0;
+	border-color: transparent;
+}
+
+.top-navbar {
+	background: url(../images/Phase2_Navigation_Horizontal_02.png);
+	background-repeat: repeat;
+    // background-color: #3c3c3c !important;
+    position: relative;
+    z-index: 2;
+    height: 89px;
+    z-index: 2;
+    // -webkit-box-shadow: 0 8px 2px 0px #0096C1;
+    // -moz-box-shadow: 0 8px 2px 0px #0096C1;
+    // box-shadow: 0 8px 2px 0px #0096C1;    
+    .navbar-header {
+    	.navbar-toggle {
+    		margin-top: 25px;
+    	}
+    	.navbar-toggle:focus, .navbar-toggle:hover {
+    		background-color: $darkest-background-color;
+    	}
+    	.navbar-header-image {
+			margin-top: 18px;
+    	}
+    }
+    .navbar-nav > li > a {
+		padding: 0;
+	}
+    .navbar-right {
+		text-transform: uppercase;
+		padding: 10px 0;
+		margin-top: 8px;
+		display: inline-flex;
+		// .divider-vertical-second-menu{
+	 //   		height: 15px;
+	 //    	width: 1px;
+	 //    	margin: 18px 3px;
+	 //    	overflow: hidden;
+		//     border-right: 2px solid #F7E7CD;
+		// }
+		// .divider-horizontal-second-menu {
+		// 	visibility: hidden;
+		// }
+		li {
+			margin: 0 5px;
+			.active:after {
+				background: url(../images/FaseTwo_Blog_06.png);
+				content: '';
+			    background-size: cover;
+			    position: absolute;
+			    top: 81px;
+			    height: 8px;
+			    width: 45px;
+				// background-color: #3c3c3c;
+				// -webkit-box-shadow: 0 56px 5px -4px white;
+			 //    -moz-box-shadow: 0 56px 5px -4px white;
+			 //    box-shadow: 0 56px 5px -4px white;
+			}
+		}
+		.search-group {
+			display: inline-flex;
+			background-color: transparent;
+			.li-search-button {
+				margin-top: 3px;
+			}
+		}	
+		.BSC-button-group {
+			display: inline-flex;
+			.li-S-button, .li-C-button {
+				margin-top: 3px;
+			}
+		}
+		.signIn-Up-button-group {
+			display: inline-flex;
+			.li-signIn {
+				margin-top: 15px;
+				a {
+					color: #F7E7CD;
+					font-weight: bold;
+				}
+				a:hover {
+					color: #F7E7CD;
+					font-weight: bold;
+				}
+			}
+			.li-or {
+				font-size: 10px;
+				color: #F7E7CD;
+				margin-top: 20px;
+			}
+			.btn, .btn-default {
+				font-size: 16px;
+				background-color: #c4302f;
+				color: $light-text-color;
+				text-transform: uppercase;
+				margin-top: 6%;
+			    border-radius: 8px;
+			    border: 0;
+			}
+		} 
+		// .li-search-button, .li-S-button, .li-C-button {
+		// 	margin-top: 3px;
+		// }
+		// .li-signIn {
+		// 	margin-top: 15px;
+		// }
+		// .li-or {
+		// 	font-size: 10px;
+		// 	color: #F7E7CD;
+		// 	margin-top: 20px;
+		// }		
+		// .li-blog, .li-clients, .li-suppliers, .li-signIn {
+		// 	a {
+		// 		color: #F7E7CD;
+		// 		font-weight: bold;
+		// 	}
+		// }
+		// .li-blog, .li-clients, .li-suppliers, .li-signIn {
+		// 	a:hover {
+		// 		color: #F7E7CD;
+		// 		font-weight: bold;
+		// 	}
+		// }
+		// .btn, .btn-default {
+		// 	font-size: 16px;
+		// 	background-color: #c4302f;
+		// 	color: $light-text-color;
+		// 	text-transform: uppercase;
+		// 	margin-top: 6%;
+		//     border-radius: 8px;
+		//     border: 0;
+		// }
+	}
+}
+header {
+	position: relative;
+	width: 100%;
+	min-height: auto;
+	font-family: $font-family;
+
+	.header-image {
+		.image {
+			height: 80vh;
+			overflow: hidden;
+			.img-responsive {
+				width: 100%;
+			}
+		}
+	}
+
+	.tienTien-blog-header-image {
+		.image {
+			height: 15vh;
+			overflow: hidden;
+			.img-responsive {
+				width: 100%;
+			}
+		}
+	}
+
+    .industry-search-container, .search-container {
+		width: 100%;
+		.search-all-container {
+			margin-top: 1%;
+			.search-title-container {
+				p {
+					color: $light-text-color;
+					text-transform: uppercase;
+					font-size: 32px;
+				}
+			}
+			.dropdown-container {
+				.dropdown {
+					button {
+						color: #4FC6E1;
+						text-transform: uppercase;
+						// width: 200px;
+						font-size: 16px;
+						border-radius: 10px;
+						.caret {    
+						    border-left: 10px solid transparent;
+						    border-right: 10px solid transparent;
+						    border-top: 10px solid #4FC6E1;
+						}
+					}
+					.dropdown-menu {
+						width: 200px;
+						color: #4FC6E1;
+						.dropdown-header {
+    						color: #4FC6E1;
+    					}
+    					li {
+    						a {
+    							color: #4FC6E1;
+    						}
+    					}
+    					.divider {
+    						// background-color: #4FC6E1;
+    						border: 1px solid #4FC6E1;
+    					}
+					}
+				}			
+			}
+			.separator {
+			    margin-bottom: 20px;
+			    border: 0;
+			    border-top: 7px solid #fff;
+			    border-radius: 10px;				
+			}
+		}
+	}
+
+	.industry-search-container {
+		background-color: rgba(79, 198, 225, 0);
+		position: relative;
+		z-index: 2;		
+		.search-all-container {
+			.search-title-container {
+				a {
+				}
+			}
+			.dropdown-container {
+				.dropdown {
+					button {
+						background-color: rgba(225, 225, 225, 0);
+						border: 2px solid #4FC6E1;
+						.caret {
+							margin-left: 12px;
+						}
+					}
+					.dropdown-menu {
+						background-color: rgba(225, 225, 225, 0);
+    					border: 2px solid #4FC6E1;
+    					.dropdown-header {
+    					}
+    					li {
+    						a {
+    						}
+    						a:hover {
+    							background-color: rgba(225, 225, 225, 0);
+    						}
+    					}
+    					.divider {
+    					}
+					}
+				}			
+			}
+			.separator {				
+			}
+		}		
+	}		
+
+	.search-container {
+		background-color: #4FC6E1;
+		.search-all-container {
+			.search-title-container {
+				a {
+				}
+			}
+			.dropdown-container {
+				.dropdown {
+					button {
+						.caret {
+							margin-left: 60px;							
+						}
+					}
+					.dropdown-menu {
+					}
+				}			
+			}
+			.separator {				
+			}
+		}				
+	}
+
+	.carousel {
+	    position: absolute;
+	    z-index: 1;
+	    width: 100%;
+	    top: 0;
+		.carousel-indicators {
+			display: none;
+		}
+		.carousel-inner {
+			// height: 88vh;
+			.item, .active {
+				.item-image {
+					// height: 88vh;
+					.img-responsive {
+						width: 100%;
+					}
+				}
+				.carousel-caption {
+					position: relative;
+				    top: auto;
+				    bottom: 150px;
+					right: 50%;
+					left: auto;
+					transform: translate(50%,-175%);
+				    h1 {
+						font-size: 55px;
+						text-transform: uppercase;
+						font-style: italic;
+						// color: $light-text-color;
+					}
+					button {
+						background-color: #4FC6E1;
+						color: $light-text-color;
+						border-color: #4FC6E1;
+						font-size: 16px;
+						width: 120px;
+					}
+					.middle-content-container {					    
+						.middle-title-container {
+							
+						}
+						.middle-button-container {
+							
+						}
+					}
+					.bottom-content-container {
+						position: absolute;
+						bottom: -105px;
+					    text-transform: uppercase;
+					    font-size: 18px;
+					    line-height: 1;
+					    left: 50%;
+						right: auto;
+						transform: translate(-50%, 200%);
+						text-align: left;
+					    .best-handcraft-text-container {				
+					    	font-style: italic;
+					    	font-weight: bold;
+					    }
+					    p {
+							opacity: 0.8;
+					    	a {
+				    			color: $light-text-color;		    		
+					    	}
+					    }
+					}					
+				}								
+			}			 
+		}		
+	}
+}
+
+#main {
+	.main-content-container {
+		font-family: $font-family;
+		position: absolute;
+		max-width: 100%;
+		max-height: 100%;
+		min-height: auto;
+	    top: 155%;
+	    bottom: auto;
+	    left: 50%;
+	    right: auto;
+	    z-index: 1;
+	    transform: translate(-50%, -50%);
+	    .our-industries-container, .feature-companies-container {
+			.our-industries-title-container, .feature-companies-title-container {
+				display: block;
+		        text-align: center;
+		        overflow: hidden;
+		        white-space: nowrap;    
+		    	font-size: 20px;
+		    	margin: 0 10px;
+		    	span {
+		    		position: relative;
+		        	display: inline-block;
+		        	text-transform: uppercase;
+		        	color: #4FC6E1;
+		        	font-size: 32px;
+		        	font-style: italic;
+		    	}
+			}
+			.our-industries-title-container, .feature-companies-title-container {
+		    	span:before, span:after {
+					content: "";
+			        position: absolute;
+			        top: 50%;
+			        width: 9999px;
+			        /* Here is the modification */
+			        border-top: 1px solid #4FC6E1;
+		    	}        
+		    }
+		    .our-industries-title-container, .feature-companies-title-container {
+		    	span:before {
+		    		right: 100%;
+		        	margin-right: 15px;
+		    	}	        
+		    }
+
+		    .our-industries-title-container, .feature-companies-title-container {
+		    	span:after {
+		    		left: 100%;
+		        	margin-left: 15px;
+		    	}	        
+		    }
+		    .our-industries-content-container, .feature-companies-content-container {
+		    	margin: 30px 100px;
+		    	p {
+		    		text-align: center;
+		    	}
+		    }
+		}
+		.our-industries-container {		
+		    .our-industries-tab-container {
+		    	.our-industries-tab-content {
+		    		    border: 1px solid #DEDDCA;
+					    margin: 10px -5px;
+					    border-radius: 10px;
+					    background-color: #F6F6F6;
+					    display: block;
+		    		p {	    			
+					    padding: 30px 0;
+		    			text-align: center;
+		    			color: #898989;
+		    			font-size: 32px;
+		    		}	    		
+		    	}
+		    	.our-industries-tab-content:hover {
+		    		border: 1px solid #4FC6E1;
+		    		background-color: #4FC6E1;
+		    		p {
+		    			text-align: center;
+		    			color: $light-text-color;
+		    		}
+		    	}
+		    }
+		}
+		.feature-companies-container {
+			margin-top: 20px;
+			.feature-companies-thumbnail-container {
+				.thumbnail {					
+					padding: 0;
+					.img-responsive {
+						width: 100%;
+					    height: 200px;
+					    border-top-left-radius: 10px;
+					    border-top-right-radius: 10px;
+					}
+					border-radius: 10px;
+					.caption {
+						margin-top: 5px;
+						padding: 0;
+						.caption-small-title, .caption-title, .caption-content, .caption-views {
+							padding: 0 10px;
+						}
+						.caption-small-title {
+							text-transform: uppercase;									
+							p {
+								font-size: 12px;
+								margin-bottom: 0;
+								color: #DDDDDD;
+								overflow: hidden;
+							    text-overflow: ellipsis;
+							    white-space: nowrap;
+							}															
+						}
+						.caption-title {
+							text-transform: capitalize;	
+							h4 {
+								margin-top: 0;
+								font-size: 24px;
+								a {
+									color: #4fc6e1;
+									overflow: hidden;
+								    text-overflow: ellipsis;
+								    white-space: nowrap;
+								}					
+							}
+						}
+						.separator {
+							border: 0;
+		    				border-top: 1px solid #4fc6e1;
+		    				margin: 0 10px;
+						}
+						.caption-content {
+							font-weight: bold;
+							p {						
+								overflow: hidden;
+							    text-overflow: ellipsis;
+							    white-space: nowrap;
+							    margin: 0;						
+							}
+							p:hover {
+								white-space: normal;
+								overflow: visible;
+							}					
+							span {
+								overflow: hidden;
+							    text-overflow: ellipsis;
+							    max-height: 40px;
+							    display: block;
+								a {
+									color: #4fc6e1;
+								}
+							}
+						}
+						.caption-views {
+							width: 100%;
+						    height: 35px;
+						    background-color: #F6F6F6;
+						    border-bottom-left-radius: 10px;
+						    border-bottom-right-radius: 10px;
+							p {
+								padding-top: 5px;
+								overflow: hidden;
+							    text-overflow: ellipsis;
+							    white-space: nowrap;
+							}
+						}
+					}
+				}
+			}
+		}
+	}	
+}
+
+#tienTien-aboutUS, #tienTien-services, #tienTien-clients, #tienTien-facility {
+	background-color: #efefef;
+	font-family: $font-family-2;
+	.tienTien-aboutUS-container {
+		.tienTien-aboutUS-left-content-container {
+			padding: 0;
+			background-color: #EFEFEF;
+    		top: -127px;
+			.tienTien-header-container {
+				background-color: #0098BA;
+				padding-top: 10px;
+				.header-content-container {
+					float: left;
+					text-transform: uppercase;
+					color: $light-text-color;
+					font-size: 14px;
+				}
+				.header-icon-container {
+					float: right;
+					font-size: 15px;
+				}
+			}
+			.tienTien-body-container {
+				border: 1px solid #D1D1D1;
+				.tienTien-media-container {
+					margin-top: 10px;
+					.media {
+						.media-left, .media-middle {
+							a {
+								.image {
+									width: 70px;
+									.img-responsive {
+										border-radius: 50%;
+										width: 100%;
+									}
+								}
+							}
+						}
+						.media-body {
+							.media-heading {
+								text-transform: uppercase;
+								color: #4FC6E1;
+								font-weight: bold;
+								font-size: 22px;
+							}
+						}
+					}
+				}
+				.tienTien-location-container {
+					margin-top: 10px;
+					.location-text, .fa-map-marker {
+						color: #686868;
+					}
+					.fa-map-marker {
+						font-size: 18px;
+					}
+					.location-text {
+						text-transform: capitalize;
+						font-size: 15px;
+					}
+				}				
+				.navifico-company-overview-container, .navifico-factory-capability-container, .navifico-client-list-container, .navifico-certification-container, .navifico-tags-container, .navifico-download-profile-container, .navifico-email-us-container {
+					padding: 0 15px;
+					.company-overview-title, .factory-capability-title, .client-list-title, .certification-title, .tags-title, .download-profile-title, .email-us-title {
+						text-transform: uppercase;
+						color: #E3626D;
+					    padding: 10px 0;
+					    font-weight: bold;
+						p {
+							font-size: 18px;
+							overflow: hidden;
+						    text-overflow: ellipsis;
+						    white-space: nowrap;
+						}
+					}
+				}
+				.navifico-company-overview-container, .navifico-factory-capability-container, .navifico-client-list-container {
+					.company-overview-content, .factory-capability-content, .client-list-content {
+						.content-container {						
+							clear: both;
+							.content {
+								float: left;
+								text-transform: uppercase;
+								font-weight: 800;
+								overflow: hidden;
+								text-overflow: ellipsis;
+								font-size: 12px;
+								max-width: 145px;
+							}						
+							.detail {
+								float: right;
+								font-size: 12px;
+								color: #B5B5B5;
+								overflow: hidden;
+							    text-overflow: ellipsis;
+							    text-align: right;
+							    max-width: 145px;
+							    font-family: $font-family-2;							
+							}
+						}
+					}
+				}
+				.separator {
+					margin-top: 20px;
+				    margin-bottom: 20px;
+				    border: 0;
+				    border-top: 1px solid #E1E1E1;
+				}
+				.navifico-factory-capability-container {
+					.factory-capability-content {
+						.machinery-container {
+							clear: both;
+							.machinery-content {
+								float: left;
+								text-transform: uppercase;
+								font-weight: 800;
+								overflow: hidden;
+								text-overflow: ellipsis;
+								font-size: 12px;
+								max-width: 145px;
+							}
+							.machinery-detail {
+								p {
+									margin: 15px 0;
+									span {
+										text-transform: uppercase;
+										border: 1px solid #E1E1E1;
+										font-size: 12px;
+										background-color: $darkest-background-color;
+										overflow: hidden;
+									    text-overflow: ellipsis;
+									    white-space: nowrap;
+									    margin-right: 5px;
+									    padding: 5px;
+									    a {
+											color: $light-text-color;
+									    }
+									}					
+								}
+							}
+							.machinery-link {
+								a {
+									text-transform: uppercase;
+									text-decoration: underline;
+									color: #4FC6E1;
+								}
+							}
+						}
+					}
+				}
+				.navifico-client-list-container {
+					.client-list-content {
+						.content-container {		
+							.detail {
+							    .numbers {
+									color: #C9C9C9;
+									overflow: hidden;
+								    text-overflow: ellipsis;
+								    white-space: nowrap;
+								}							
+							}
+						}					
+					}
+				}
+				.navifico-certification-container, .navifico-tags-container {
+					.certification-content, .tags-content {
+						p {
+							margin: 15px 0;
+							span {
+								text-transform: uppercase;
+								border: 1px solid #E1E1E1;
+								font-size: 12px;
+								overflow: hidden;
+							    text-overflow: ellipsis;
+							    white-space: nowrap;
+							    margin-right: 5px;
+							    padding: 5px;
+							    background-color: $darkest-background-color;
+							    color: $light-text-color;
+							    a {
+									color: $light-text-color;
+							    }
+							}					
+						}
+					}
+				}			
+				.navifico-tags-container {
+					.tags-link {
+						margin-top: 10px;
+						a {
+							text-transform: uppercase;
+							text-decoration: underline;
+							color: #4FC6E1;
+						}
+					}
+				}
+				.tienTien-download-profile-container {
+					margin-top: 10px;
+				}
+				.tienTien-download-profile-container, .tienTien-email-us-container {
+					border-top: 1px solid $light-border-color;
+				    background-color: $darkest-background-color;
+				    padding: 5px 15px 0;
+				    .download-profile-title, .email-us-title {
+				    	text-transform: uppercase;
+					    padding: 10px 0;
+						p {
+							font-size: 18px;
+							overflow: hidden;
+						    text-overflow: ellipsis;
+						    white-space: nowrap;
+						    color: $light-text-color;
+						    img {
+						    	margin-right: 10px;
+						    }
+						}
+				    }
+					.download-profile-content, .email-us-content {
+						p {
+							text-transform: uppercase;
+							font-weight: 800;
+							overflow: hidden;
+						    text-overflow: ellipsis;
+						    white-space: nowrap;
+						    font-size: 12px;
+						    color: $light-text-color;
+						}					
+					}
+				}
+			}			
+		}
+		.tienTien-aboutUS-right-content-container {
+			border: 1px solid #D1D1D1;
+			padding: 0 0 70px;
+			margin: 0 0 50px;
+			.tienTien-navbar {
+				background-color: #efefef;
+				border-radius: 0;
+				border: 0;
+				border-bottom: 1px solid #E3E3E3;
+				margin: 0;
+				.navbar-collapse {
+					text-align: center;
+					.nav, .navbar-nav {
+						color: #676767;
+						display: inline-block;
+						float: none;
+						vertical-align: top;
+						.active {
+							a {
+								background-color: #efefef;
+								border-bottom: 1px solid #1E233D;
+							}							
+						}
+						.divider-vertical-second-menu{
+					   		height: 15px;
+					    	width: 1px;
+					    	margin: 18px 3px;
+					    	overflow: hidden;
+						    border-right: 1px solid #676767;
+						}
+						.divider-horizontal-second-menu {
+							visibility: hidden;
+						}
+					}					
+				}
+			}
+			.tienTien-thumbnail-container {
+				font-family: $font-family;
+				max-width: 100%;
+				padding: 30px 40px;
+				.thumbnail {
+					padding: 10px;
+					border-radius: 0;
+					background-color: #efefef;
+					-webkit-box-shadow: 0 8px 6px -4px #DCDCDC;
+				    -moz-box-shadow: 0 8px 6px -4px #DCDCDC;
+				    box-shadow: 0 8px 6px -4px #DCDCDC;
+					.thumbnail-content {
+						font-family: $font-family-2;
+						height: 200px;
+						overflow: hidden;
+						border: 1px solid #efefef;
+						background-color: #009ecb;
+						display: table;
+						text-align: center;
+						width: 100%;
+						// .img-responsive {
+						// 	width: 100%;
+						//     height: 100%;
+						// }
+						p {
+							display: table-cell;
+							vertical-align: middle;
+							font-size: 50px;
+							font-weight: bold;
+							color: $light-text-color;
+						}
+					}
+					.caption {
+						padding: 9px 0;					
+					    // background-color: #F6F6F6;
+						.caption-small-title, .caption-title, .caption-content, .caption-views {
+							padding: 0;
+						}
+						.caption-small-title {
+							text-transform: uppercase;									
+							p {
+								font-size: 12px;
+								margin-bottom: 0;
+								// color: #DDDDDD;
+								overflow: hidden;
+							    text-overflow: ellipsis;
+							    white-space: nowrap;
+							}
+						}
+						.caption-title {
+							text-transform: capitalize;
+							padding: 10px;	
+							h4 {
+								margin: 0;						
+								font-size: 18px;
+								a {
+									color: black;
+									font-weight: bold;
+									overflow: hidden;
+								    text-overflow: ellipsis;
+								}					
+							}
+							p {
+								color: #797979;
+							}
+						}
+						.separator {
+							border: 0;
+		    				border-top: 1px solid #797979;
+		    				margin: 0 10px;
+						}
+						.caption-content {
+							p {						
+								color: #797979;
+								overflow: hidden;
+							    text-overflow: ellipsis;
+							    margin: 0;
+							    max-height: 60px;
+							    a {
+							    	color: #4FCDE8;
+							    }						
+							}					
+							span {
+								overflow: hidden;
+							    text-overflow: ellipsis;
+							    max-height: 40px;
+							    display: block;
+								a {
+									color: #4fc6e1;
+								}
+							}
+
+						}
+						.caption-link {
+							width: 100%;
+						    height: 35px;
+							padding: 10px;
+							p {					
+								overflow: hidden;
+							    text-overflow: ellipsis;
+							    white-space: nowrap;
+								a {
+									color: #4fc6e1;
+								}
+							}
+						}
+					}
+				}
+			}
+			.navifico-thumbnails-container {						
+				max-width: 100%;
+				border: 1px solid #E3E3E3;
+				padding: 15px 25px 40px;
+				background-color: black;
+				.thumbnail-title {
+					text-transform: uppercase;
+					color: $light-text-color;
+					font-weight: bold;
+					padding: 25px 0;
+				}
+				.thumbnail {
+					padding: 0;
+					border-radius: 0;
+					.thumbnail-image {
+						height: 200px;
+						overflow: hidden;
+						.img-responsive {
+							width: 100%;
+						    height: 100%;
+						}
+					}
+					.caption {
+						padding: 0;
+					    background-color: #F6F6F6;
+						.caption-small-title, .caption-title, .caption-content, .caption-views {
+							padding: 0 10px;
+						}
+						.caption-small-title {
+							text-transform: uppercase;									
+							p {
+								font-size: 12px;
+								margin-bottom: 0;
+								// color: #DDDDDD;
+								overflow: hidden;
+							    text-overflow: ellipsis;
+							    white-space: nowrap;
+							}
+						}
+						.caption-title {
+							text-transform: capitalize;
+							padding: 10px;	
+							h4 {
+								margin: 0;						
+								font-size: 18px;
+								a {
+									color: black;
+									font-weight: bold;
+									overflow: hidden;
+								    text-overflow: ellipsis;
+								}					
+							}
+							p {
+								color: #797979;
+							}
+						}
+						.separator {
+							border: 0;
+		    				border-top: 1px solid #797979;
+		    				margin: 0 10px;
+						}
+						.caption-content {
+							padding: 10px;
+							p {						
+								color: #797979;
+								overflow: hidden;
+							    text-overflow: ellipsis;
+							    margin: 0;
+							    a {
+							    	color: #4FCDE8;
+							    }						
+							}					
+							span {
+								overflow: hidden;
+							    text-overflow: ellipsis;
+							    max-height: 40px;
+							    display: block;
+								a {
+									color: #4fc6e1;
+								}
+							}
+
+						}
+						.caption-link {
+							width: 100%;
+						    height: 35px;
+							padding: 10px;
+							p {					
+								overflow: hidden;
+							    text-overflow: ellipsis;
+							    white-space: nowrap;
+								a {
+									color: #4fc6e1;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}	
+}
+
+#tienTien-aboutUS {
+	.tienTien-aboutUS-container {
+		.tienTien-aboutUS-right-content-container {
+			.tienTien-aboutUS-detail-container {
+				font-family: $font-family;
+				padding: 30px 40px;
+				.image {
+					.img-responsive {
+						width: 100%;
+					}
+					.graph-responsive {
+						width: 30%;
+					}
+				}
+				h1, p, ul>li {
+					font-size: 16px;
+				}
+				h1 {
+					font-weight: bold;
+					text-transform: uppercase;
+				}
+				p {
+					color: #898989;
+				}
+				ul {
+					li {
+						color: #898989;
+					}
+				}
+			}
+		}
+	}
+}
+
+#tienTien-clients {
+	.tienTien-aboutUS-container {
+		.tienTien-aboutUS-right-content-container {
+			.tienTien-services-thumbnails-container {
+				max-width: 100%;
+				padding: 30px;
+				.thumbnail {
+					padding: 0;
+					border-radius: 0;
+					.thumbnail-image {
+						height: 200px;
+						overflow: hidden;
+						.img-responsive {
+							width: 100%;
+						    height: 100%;
+						}
+					}
+					.caption {
+						padding: 0;
+					    background-color: #F6F6F6;
+						.caption-small-title, .caption-title, .caption-content, .caption-views {
+							padding: 0 10px;
+						}
+						.caption-small-title {
+							text-transform: uppercase;									
+							p {
+								font-size: 12px;
+								margin-bottom: 0;
+								// color: #DDDDDD;
+								overflow: hidden;
+							    text-overflow: ellipsis;
+							    white-space: nowrap;
+							}
+						}
+						.caption-title {
+							text-transform: capitalize;
+							padding: 10px;	
+							h4 {
+								margin: 0;						
+								font-size: 18px;
+								a {
+									color: black;
+									font-weight: bold;
+									overflow: hidden;
+								    text-overflow: ellipsis;
+								}					
+							}
+							p {
+								color: #797979;
+							}
+						}
+						.separator {
+							border: 0;
+		    				border-top: 1px solid #797979;
+		    				margin: 0 10px;
+						}
+						.caption-content {
+							padding: 10px;
+							p {						
+								color: #797979;
+								overflow: hidden;
+							    text-overflow: ellipsis;
+							    margin: 0;
+							    max-height: 80px;
+							    a {
+							    	color: #4FCDE8;
+							    }						
+							}					
+							span {
+								overflow: hidden;
+							    text-overflow: ellipsis;
+							    max-height: 40px;
+							    display: block;
+								a {
+									color: #4fc6e1;
+								}
+							}
+
+						}
+						.caption-link {
+							width: 100%;
+						    height: 35px;
+							padding: 10px;
+							p {					
+								overflow: hidden;
+							    text-overflow: ellipsis;
+							    white-space: nowrap;
+								a {
+									color: #4fc6e1;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#tienTien-facility {
+	.tienTien-facility-thumbnail-container {
+		max-width: 100%;
+		padding: 30px 40px;
+		.thumbnail {
+			padding: 10px;
+			border-radius: 0;
+			background-color: #efefef;
+			-webkit-box-shadow: 0 8px 6px -4px #DCDCDC;
+		    -moz-box-shadow: 0 8px 6px -4px #DCDCDC;
+		    box-shadow: 0 8px 6px -4px #DCDCDC;
+			.thumbnail-content {
+				font-family: $font-family-2;
+				height: 200px;
+				overflow: hidden;
+				border: 1px solid #efefef;
+				background-color: #009ecb;
+				display: table;
+				text-align: center;
+				width: 100%;
+				// .img-responsive {
+				// 	width: 100%;
+				//     height: 100%;
+				// }
+				p {
+					display: table-cell;
+					vertical-align: middle;
+					font-size: 50px;
+					font-weight: bold;
+					color: $light-text-color;
+				}
+			}
+			.caption {
+				padding: 9px 0;					
+			    // background-color: #F6F6F6;
+			    .row {
+			    	.caption-image {
+			    		max-height: 125px;
+			    		max-width: 245px;
+			    		overflow: hidden;
+			    		.img-responsive {
+			    			width: 100%;
+			    		}
+			    	}
+			    	.caption-small-title, .caption-title, .caption-content, .caption-views {
+						padding: 0;
+					}
+					.caption-small-title {
+						text-transform: uppercase;									
+						p {
+							font-size: 12px;
+							margin-bottom: 0;
+							// color: #DDDDDD;
+							overflow: hidden;
+						    text-overflow: ellipsis;
+						    white-space: nowrap;
+						}
+					}
+					.caption-title {
+						text-transform: uppercase;
+						font-family: $font-family-2;
+						h4 {
+							margin: 5px 0;													
+							font-size: 14px;
+							a {
+								color: black;
+								font-weight: bold;
+								overflow: hidden;
+							    text-overflow: ellipsis;
+							}					
+						}
+						p {
+							color: #797979;
+						}
+					}
+					.separator {
+						border: 0;
+	    				border-top: 1px solid #797979;
+	    				margin: 0 10px;
+					}
+					.caption-content {
+						font-family: $font-family-2;
+						p {						
+							color: #797979;
+							overflow: hidden;
+						    text-overflow: ellipsis;
+						    margin: 0;
+						    max-height: 60px;
+						    a {
+						    	color: #4FCDE8;
+						    }						
+						}					
+						span {
+							overflow: hidden;
+						    text-overflow: ellipsis;
+						    max-height: 40px;
+						    display: block;
+							a {
+								color: #4fc6e1;
+							}
+						}
+
+					}
+					.caption-link {
+						width: 100%;
+					    height: 35px;
+						padding: 10px;
+						p {					
+							overflow: hidden;
+						    text-overflow: ellipsis;
+						    white-space: nowrap;
+							a {
+								color: #4fc6e1;
+							}
+						}
+					}
+			    }				
+			}
+		}
+	}
+}
+
+#tienTien-allPost {
+
+}
+
+#tienTien-blog {
+	background-color: #efefef;
+	font-family: $font-family;
+	.tienTien-blog-overall-container {
+		position: relative;
+		top: -72px;
+		z-index: 1;
+		.tienTien-blog-container {
+			.nav-pills {
+				font-family: $font-family-2;				
+				.li-allPosts, .li-blog, .li-news, .li-tips, .li-active, .li-active {
+					text-transform: uppercase;
+					font-weight: bold;
+					font-size: 16px;			
+					a {
+						border-radius: 0;								
+						padding: 25px 0;				
+						color: $light-text-color;
+					}
+				}				
+				.li-allPosts {
+					background-color: #C4302F;
+				}
+				.li-allPosts:hover {
+					background-color: #C4302F;
+					a:hover {
+						background-color: #C4302F;
+					}
+				}
+				.li-blog {
+					background-color: #2EB9B1;
+				}
+				.li-blog:hover {
+					background-color: #2EB9B1;
+					a:hover {
+						background-color: #2EB9B1;
+					}
+				}
+				.li-news {
+					background-color: #22A558;
+				}
+				.li-news:hover {
+					background-color: #22A558;
+					a:hover {
+						background-color: #22A558;
+					}
+				}
+				.li-tips {
+					background-color: #D4D643;
+				}
+				.li-tips:hover {
+					background-color: #D4D643;
+					a:hover {
+						background-color: #D4D643;
+					}
+				}
+				.li-active {
+					text-decoration: underline;
+				}	
+			}
+		}
+		.tienTien-allPosts-content-container, .tienTien-blog-content-container {
+			background-color: #efefef;
+			font-family: $font-family;
+			.tienTien-allPosts-body-content-container, .tienTien-blog-body-content-container {
+				border: 1px solid #D1D1D1 !important;
+				padding: 30px 20px;
+				.form-inline {
+					padding: 0 5px 30px;
+					text-align: center;
+					.form-search-group {
+						.input-search-group {
+							.form-search {
+								// width: 509px;
+								background-color: $darkest-background-color;
+								color: $light-text-color;
+							}							
+							.input-group-btn {
+								.btn-search {
+									background-color: $darkest-background-color;
+									color: $light-text-color;
+									border-left: 0;								
+								}
+								
+							}
+						}
+						.form-search::-webkit-input-placeholder {
+						   color: $light-text-color;
+						}
+
+						.form-search:-moz-placeholder { /* Firefox 18- */
+						   color: $light-text-color;  
+						}
+
+						.form-search::-moz-placeholder {  /* Firefox 19+ */
+						   color: $light-text-color;  
+						}
+
+						.form-search:-ms-input-placeholder {  
+						   color: $light-text-color;  
+						}
+					}
+					.label-follow-us, .label-or {
+						font-weight: normal;
+					}
+					.label-follow-us {
+						margin: 0 15px;
+					}
+					.label-or {
+						margin: 0 5px;
+					}
+					.form-icon-group {						
+						a:hover {
+							color: black;
+							img:hover {
+								color: black;
+							}
+						}
+					}
+					.form-email-group {
+						.label-subcribe {
+							font-weight: normal;
+							margin: 0 5px 0 0;
+						}
+						.input-email-group {
+							.form-email {
+								// width: 204px;
+								background-color: #efefef;
+							}
+							.input-group-btn {
+								.btn-submit {
+									background-color: #efefef;
+									border-left: 0;
+									font-weight: bold;
+								}
+							}
+						}
+					}					
+				}
+			}
+		}
+		.tienTien-allPosts-content-container {			
+			.tienTien-allPosts-body-content-container {				
+				.tienTien-allPosts-single-img-container {
+					padding: 0 20px 10px 20px;
+					.single-image {
+						overflow: hidden;
+						position: relative;
+						.img-responsive {
+							width: 100%;
+						}
+						// .image-content-active {
+						// 	background-color: rgba(34, 165, 88, .2);
+						// }
+						.image-content-container {
+							background-color: $light-background-color;
+							font-family: $font-family;								
+							margin: 10px;
+							padding: 10px 15px 0;
+							position: absolute;
+							bottom: 0;
+							right: 0;
+							.image-header-content {
+								clear: both;
+								.image-content-title {
+									// float: left;
+									h6 {
+										padding: 0;
+										margin: 0;
+										font-weight: bold;
+										font-size: 16px;
+										text-transform: uppercase;
+										font-family: $font-family-2;
+										overflow: hidden;
+										text-overflow: ellipsis;
+										white-space: nowrap;
+										// width: 435px;
+										a {
+											color: $darkest-text-color;
+										}
+									}
+									p {
+										overflow: hidden;
+										text-overflow: ellipsis;
+										white-space: nowrap;
+										// width: 435px;
+										font-size: 12px;
+									}
+								}
+								.image-content-icon {
+									.icon {
+										width: 36px;
+										height: 36px;
+										overflow: hidden;
+									}
+								}
+							}
+							.image-body-content {
+								clear: both;
+								font-family: $font-family;
+								p {
+									overflow: hidden;
+									text-overflow: ellipsis;
+									height: 40px;										
+								}
+							}
+							// .image-content {
+							// 	background-color: $light-background-color;
+							// 	font-family: $font-family;								
+							// 	margin: 10px;
+							// 	padding: 10px 15px 0;
+							// 	position: absolute;
+							// 	bottom: 0;
+							// 	right: 0;
+								
+							// }										
+						}
+						// .image-content-container:hover {
+						// 	background-color: rgba(34, 165, 88, .2);
+						// }
+					}
+				}
+				.tienTien-allPosts-double-img-container {
+					.tienTien-allPosts-double-left-img-container, .tienTien-allPosts-double-right-img-container {
+						.image {
+							position: relative;
+							.img-responsive {
+								width: 100%;
+							}
+							.image-content-container {
+								background-color: $light-background-color;
+								font-family: $font-family;								
+								margin: 10px;
+								padding: 10px 15px 0;
+								position: absolute;
+								bottom: 0;
+								.image-header-content {
+									clear: both;
+									.image-content-title {
+										// float: left;
+										h6 {
+											padding: 0;
+											margin: 0;
+											font-weight: bold;
+											font-size: 16px;
+											text-transform: uppercase;
+											font-family: $font-family-2;
+											overflow: hidden;
+											text-overflow: ellipsis;
+											white-space: nowrap;
+											// width: 435px;
+											a {
+												color: $darkest-text-color;
+											}
+										}
+										p {
+											overflow: hidden;
+											text-overflow: ellipsis;
+											white-space: nowrap;
+											// width: 435px;
+											font-size: 12px;
+										}
+									}
+									.image-content-icon {
+										// float: right;
+										.icon {
+											width: 36px;
+											height: 36px;
+											overflow: hidden;
+										}
+									}
+								}
+								.image-body-content {
+									clear: both;
+									font-family: $font-family;
+									p {
+										overflow: hidden;
+										text-overflow: ellipsis;
+										height: 40px;										
+									}
+								}
+								// .image-content {
+								// 	background-color: $light-background-color;
+								// 	font-family: $font-family;								
+								// 	margin: 10px;
+								// 	padding: 10px 15px 0;
+								// 	position: absolute;
+								// 	bottom: 0;
+									
+								// }										
+							}
+							// .image-content-container:hover {
+							// 	background-color: rgba(34, 165, 88, .2);
+							// }
+						}
+					}
+					.tienTien-allPosts-double-left-img-container {						
+					}
+					.tienTien-allPosts-double-right-img-container {
+					}
+				}			
+			}
+		}
+		.tienTien-blog-content-container {
+			.tienTien-blog-body-content-container {				
+				.tienTien-blog-main-image-container {
+					.image {
+						.img-responsive {
+							width: 100%;
+						}
+					}
+				}
+				.tienTien-blog-left-content-container, .tienTien-blog-right-content-container {
+					margin-top: 20px;
+				}
+				.tienTien-blog-left-content-container {
+
+					.left-content-title {
+						h1 {
+							margin: 0;
+							font-family: $font-family-2;
+							font-size: 42px;
+							text-transform: uppercase;
+						}
+					}
+					.separator {
+						margin-top: 20px;
+					    margin-bottom: 20px;
+					    border: 0;
+					    border-top: 1px solid #009dca;
+					    width: 55%;
+					}
+				}
+				.tienTien-blog-right-content-container {
+				}
+			}
+		}
+	}	
+}
+
+footer {
+	font-family: $font-family;
+	// background-color: #3C3C3C;
+	background: url(../images/Phase2_Bottom_02.png);
+	background-repeat: repeat;
+	margin: 0;
+	.footer-container {		
+		padding-top: 5%;
+		padding-bottom: 5%;
+		font-family: $font-family;
+		.row {
+			.footer-text-container {
+				color: $light-text-color;
+				height: 160px;
+				.logo-image, .C-image, .S-image, .email-image {
+					height: 46px;
+					overflow: hidden;
+					.img-responsive {
+					}
+				}
+				h6 {
+					text-transform: uppercase;
+					font-size: 16px;
+					font-weight: bold;
+					a {
+						color: $light-text-color;
+					}
+				}
+				p {
+					font-size: 12px;
+					a {
+						color: $light-text-color;
+					}
+				}
+				.separator {
+					margin: 10px 0 0;
+				    border: 0;
+				    border-top: 3px solid #eee;
+				    width: 40px;
+				}
+			}
+		}						
+	}
+}
+
+@media (max-width: 149px) {
+	.navbar-collapse.in {
+		overflow-y: hidden;
+	}
+
+	.top-navbar {  
+	    .navbar-header {
+	    	.navbar-toggle {
+	    	}
+	    	.navbar-toggle:focus, .navbar-toggle:hover {
+	    	}
+	    	.navbar-header-image {
+	    	}
+	    }
+	    .navbar-nav > li > a {
+		}		
+	    .navbar-right {
+	    	// display: block;
+	    	background-color: #333;
+	    	width: 100%;
+	    	display: block;
+	    	position: absolute;
+	    	padding-left: 15px;
+			li {
+				.active:after {
+					top: 120px;
+				}
+			}
+			.search-group {
+				display: flex;
+				.li-search-button {
+				}
+			}	
+			.BSC-button-group {
+				margin-top: 15px;
+				.li-S-button, .li-C-button {
+				}
+			}
+			.signIn-Up-button-group {
+				display: flex;
+				margin-top: 10px;
+				.li-signIn {
+					a {
+					}
+					a:hover {
+					}
+				}
+				.li-or {
+				}
+				.btn, .btn-default {
+				}
+			} 
+		}
+	}
+	#tienTien-blog {
+		.tienTien-blog-overall-container {
+			.tienTien-allPosts-content-container, .tienTien-blog-content-container {
+				.tienTien-allPosts-body-content-container, .tienTien-blog-body-content-container {
+					.form-inline {
+						// text-align: center;
+						.form-search-group {
+							margin-bottom: 10px;
+							.input-search-group {
+								.form-search {
+								}							
+								.input-group-btn {
+									.btn-search {						
+									}
+									
+								}
+							}
+						}
+						.form-icon-group {
+							.label-follow-us, .label-or {
+							}
+							.label-follow-us {
+							}
+							.label-or {
+								visibility: hidden;
+							}
+						}
+						.form-email-group {
+							margin-top: 10px;
+							.label-subcribe {
+							}
+							.input-email-group {
+								.form-email {
+								}
+								.input-group-btn {
+									.btn-submit {
+									}
+								}
+							}
+						}					
+					}
+				}
+			}
+			.tienTien-allPosts-content-container {
+				.tienTien-allPosts-body-content-container {
+					.tienTien-allPosts-single-img-container {
+						.single-image {
+							height: 190px;
+							.img-responsive {
+								height: 100%;
+							}
+							.image-content-active {
+							}
+							.image-content-container {
+								left: 0;
+								text-align: center;
+								overflow: auto;
+								// top: 0;
+								bottom: 0;
+								height: 50%;
+								.image-header-content {
+									.image-content-title {
+										h6 {
+											// width: 250px;
+											font-size: 12px;
+											a {
+											}
+										}
+										p {
+											font-size: 12px;
+											// width: 250px;
+										}
+									}
+									.image-content-icon {
+										text-align: center;
+										display: inline-block;
+										.icon {
+											width: 36px;
+											height: 36px;
+										}
+									}
+								}
+								.image-body-content {
+									p {
+										font-size: 12px;
+										height: 35px;										
+									}
+								}
+								// .image-content {
+								// 	left: 0;
+								// 	text-align: center;
+								// 	overflow: auto;
+								// 	top: 0;
+									
+								// }										
+							}
+							.image-content-container:hover {
+							}
+						}
+					}
+					.tienTien-allPosts-double-img-container {
+						.tienTien-allPosts-double-left-img-container, .tienTien-allPosts-double-right-img-container {
+							.image {
+								.img-responsive {
+								}
+								.image-background {
+								}
+								.image-content-container {
+									left: 0;
+									right: 0;
+									text-align: center;
+									overflow: auto;
+									// top: 0;
+									bottom: 0;
+									height: 50%;
+									.image-header-content {
+										.image-content-title {
+											h6 {
+												// width: 240px;
+												font-size: 12px;
+												a {
+												}
+											}
+											p {
+												font-size: 12px;
+												// width: 240px;
+											}
+										}
+										.image-content-icon {
+											text-align: center;
+											display: inline-block;
+											.icon {
+												width: 36px;
+												height: 36px;
+											}
+										}
+									}
+									.image-body-content {
+										p {
+											font-size: 12px;
+											height: 35px;										
+										}
+									}
+									// .image-content {
+									// 	left: 0;
+									// 	right: 0;
+									// 	text-align: center;
+									// 	overflow: auto;
+									// 	top: 0;
+										
+									// }										
+								}
+								.image-content-container:hover {
+								}
+							}
+						}
+						.tienTien-allPosts-double-left-img-container {
+					    	padding: 0 20px 10px 20px;
+						}
+						.tienTien-allPosts-double-right-img-container {
+							padding: 0 20px 10px 20px;	
+						}
+					}
+				}
+			}
+			.tienTien-blog-content-container {
+				.tienTien-blog-body-content-container {				
+					.tienTien-blog-main-image-container {
+						.image {
+							.img-responsive {
+							}
+						}
+					}
+					.tienTien-blog-left-content-container, .tienTien-blog-right-content-container {
+					}
+					.tienTien-blog-left-content-container {
+
+						.left-content-title {
+							h1 {
+							}
+						}
+						.separator {
+						}
+					}
+					.tienTien-blog-right-content-container {
+						border-top: 1px solid #009dca;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 150px) and (max-width: 299px) {
+	.navbar-collapse.in {
+		overflow-y: hidden;
+	}
+
+	.top-navbar {  
+	    .navbar-header {
+	    	.navbar-toggle {
+	    	}
+	    	.navbar-toggle:focus, .navbar-toggle:hover {
+	    	}
+	    	.navbar-header-image {
+	    		width: 50%;
+	    	}
+	    }
+	    .navbar-nav > li > a {
+		}		
+	    .navbar-right {
+	    	// display: block;
+	    	background-color: #333;
+	    	width: 100%;
+	    	display: block;
+	    	position: absolute;
+	    	padding-left: 15px;
+			li {
+				.active:after {
+					top: 120px;
+				}
+			}
+			.search-group {
+				display: flex;
+				.li-search-button {
+				}
+			}	
+			.BSC-button-group {
+				margin-top: 15px;
+				.li-S-button, .li-C-button {
+				}
+			}
+			.signIn-Up-button-group {
+				display: flex;
+				margin-top: 10px;
+				.li-signIn {
+					a {
+					}
+					a:hover {
+					}
+				}
+				.li-or {
+				}
+				.btn, .btn-default {
+				}
+			} 
+		}
+	}
+	#tienTien-blog {
+		.tienTien-blog-overall-container {
+			.tienTien-allPosts-content-container, .tienTien-blog-content-container {
+				.tienTien-allPosts-body-content-container, .tienTien-blog-body-content-container {
+					.form-inline {
+						// text-align: center;
+						.form-search-group {
+							margin-bottom: 10px;
+							.input-search-group {
+								.form-search {
+								}							
+								.input-group-btn {
+									.btn-search {						
+									}
+									
+								}
+							}
+						}
+						.form-icon-group {
+							.label-follow-us, .label-or {
+							}
+							.label-follow-us {
+							}
+							.label-or {
+								visibility: hidden;
+							}
+						}
+						.form-email-group {
+							margin-top: 10px;
+							.label-subcribe {
+							}
+							.input-email-group {
+								.form-email {
+								}
+								.input-group-btn {
+									.btn-submit {
+									}
+								}
+							}
+						}					
+					}
+				}
+			}
+			.tienTien-allPosts-content-container {
+				.tienTien-allPosts-body-content-container {
+					.tienTien-allPosts-single-img-container {
+						.single-image {
+							height: 84px;
+							.img-responsive {
+								height: 100%;
+							}
+							.image-content-active {
+							}
+							.image-content-container {
+								left: 0;
+								text-align: center;
+								overflow: auto;
+								// top: 0;
+								bottom: 0;
+								height: 50%;
+								.image-header-content {
+									.image-content-title {
+										h6 {
+											// width: 250px;
+											font-size: 12px;
+											a {
+											}
+										}
+										p {
+											font-size: 12px;
+											// width: 250px;
+										}
+									}
+									.image-content-icon {
+										text-align: center;
+										display: inline-block;
+										.icon {
+											width: 36px;
+											height: 36px;
+										}
+									}
+								}
+								.image-body-content {
+									p {
+										font-size: 12px;
+										height: 35px;										
+									}
+								}
+								// .image-content {
+								// 	left: 0;
+								// 	text-align: center;
+								// 	overflow: auto;
+								// 	top: 0;
+									
+								// }										
+							}
+							.image-content-container:hover {
+							}
+						}
+					}
+					.tienTien-allPosts-double-img-container {
+						.tienTien-allPosts-double-left-img-container, .tienTien-allPosts-double-right-img-container {
+							.image {
+								.img-responsive {
+								}
+								.image-background {
+								}
+								.image-content-container {
+									left: 0;
+									right: 0;
+									text-align: center;
+									overflow: auto;
+									// top: 0;
+									bottom: 0;
+									height: 50%;
+									.image-header-content {
+										.image-content-title {
+											h6 {
+												// width: 240px;
+												font-size: 12px;
+												a {
+												}
+											}
+											p {
+												font-size: 12px;
+												// width: 240px;
+											}
+										}
+										.image-content-icon {
+											text-align: center;
+											display: inline-block;
+											.icon {
+												width: 36px;
+												height: 36px;
+											}
+										}
+									}
+									.image-body-content {
+										p {
+											font-size: 12px;
+											height: 35px;										
+										}
+									}
+									// .image-content {
+									// 	left: 0;
+									// 	right: 0;
+									// 	text-align: center;
+									// 	overflow: auto;
+									// 	top: 0;
+										
+									// }										
+								}
+								.image-content-container:hover {
+								}
+							}
+						}
+						.tienTien-allPosts-double-left-img-container {
+					    	padding: 0 20px 10px 20px;
+						}
+						.tienTien-allPosts-double-right-img-container {
+							padding: 0 20px 10px 20px;	
+						}
+					}
+				}
+			}
+			.tienTien-blog-content-container {
+				.tienTien-blog-body-content-container {				
+					.tienTien-blog-main-image-container {
+						.image {
+							.img-responsive {
+							}
+						}
+					}
+					.tienTien-blog-left-content-container, .tienTien-blog-right-content-container {
+					}
+					.tienTien-blog-left-content-container {
+
+						.left-content-title {
+							h1 {
+							}
+						}
+						.separator {
+						}
+					}
+					.tienTien-blog-right-content-container {
+						border-top: 1px solid #009dca;
+					}
+				}
+			}
+		}
+	}
+}
+
+// min-width: 480px
+@media (min-width: 300px) and (max-width: $screen-xs) {
+	.navbar-collapse.in {
+		overflow-y: hidden;
+	}
+
+	.top-navbar {  
+	    .navbar-header {
+	    	.navbar-toggle {
+	    	}
+	    	.navbar-toggle:focus, .navbar-toggle:hover {
+	    	}
+	    	.navbar-header-image {
+	    	}
+	    }
+	    .navbar-nav > li > a {
+		}		
+	    .navbar-right {
+	    	// display: block;
+	    	background-color: #333;
+	    	width: 100%;
+	    	display: block;
+	    	position: absolute;
+	    	padding-left: 15px;
+			li {
+				.active:after {
+					top: 120px;
+				}
+			}
+			.search-group {
+				display: flex;
+				.li-search-button {
+				}
+			}	
+			.BSC-button-group {
+				margin-top: 15px;
+				.li-S-button, .li-C-button {
+				}
+			}
+			.signIn-Up-button-group {
+				display: flex;
+				margin-top: 10px;
+				.li-signIn {
+					a {
+					}
+					a:hover {
+					}
+				}
+				.li-or {
+				}
+				.btn, .btn-default {
+				}
+			} 
+		}
+	}
+	header {
+		.search-container, .industry-search-container {
+			.search-all-container {
+				.search-title-container {
+					display: block;
+					text-align: center;
+				}
+				.dropdown-container {
+					display: block;
+					text-align: center;
+					.dropdown {
+						.dropdown-menu {
+							left: 50%;
+							right: auto;
+							text-align: center;
+							transform: translate(-50%, 0);
+						}
+					}
+				}
+				.separator {				
+					margin-top: 20px;
+				}
+			}			
+		}
+		.carousel {
+			.carousel-indicators {
+			}
+			.carousel-inner {
+				height: 90vh;
+				.item, .active {
+					.item-image {
+						height: 90vh;
+						.img-responsive {
+							height: 100%;
+						}
+					}
+					.carousel-caption {
+					    bottom: 245px;
+						transform: translate(50%,-245%);
+					    h1 {
+					    	font-size: 18px;
+						}
+						button {
+							font-size: 14px;
+						    width: 110px;
+						    padding: 1px 0;
+						}
+						.middle-content-container {					    
+							.middle-title-container {
+								
+							}
+							.middle-button-container {
+								
+							}
+						}
+						.bottom-content-container {
+						    bottom: -175px;
+    						transform: translate(-50%, 90%);
+						    .best-handcraft-text-container {
+						    }
+						    p {
+						    	white-space: nowrap;
+						    	a {
+						    		font-size: 12px;		    		
+						    	}
+						    }
+						}					
+					}								
+				}			 
+			}		
+		}		
+	}
+
+	#tienTien-blog {
+		.tienTien-blog-overall-container {
+			.tienTien-allPosts-content-container, .tienTien-blog-content-container {
+				.tienTien-allPosts-body-content-container, .tienTien-blog-body-content-container {
+					.form-inline {
+						// text-align: center;
+						.form-search-group {
+							margin-bottom: 10px;
+							.input-search-group {
+								.form-search {
+								}							
+								.input-group-btn {
+									.btn-search {						
+									}
+									
+								}
+							}
+						}
+						.form-icon-group {
+							.label-follow-us, .label-or {
+							}
+							.label-follow-us {
+							}
+							.label-or {
+								visibility: hidden;
+							}
+						}
+						.form-email-group {
+							margin-top: 10px;
+							.label-subcribe {
+							}
+							.input-email-group {
+								.form-email {
+								}
+								.input-group-btn {
+									.btn-submit {
+									}
+								}
+							}
+						}					
+					}
+				}
+			}
+			.tienTien-allPosts-content-container {
+				.tienTien-allPosts-body-content-container {
+					.tienTien-allPosts-single-img-container {
+						.single-image {
+							height: 190px;
+							.img-responsive {
+								height: 100%;
+							}
+							.image-content-active {
+							}
+							.image-content-container {
+								left: 0;
+								text-align: center;
+								overflow: auto;
+								// top: 0;
+								bottom: 0;
+								height: 50%;
+								.image-header-content {
+									.image-content-title {
+										h6 {
+											// width: 250px;
+											font-size: 12px;
+											a {
+											}
+										}
+										p {
+											font-size: 12px;
+											// width: 250px;
+										}
+									}
+									.image-content-icon {
+										text-align: center;
+										display: inline-block;
+										.icon {
+											width: 36px;
+											height: 36px;
+										}
+									}
+								}
+								.image-body-content {
+									p {
+										font-size: 12px;
+										height: 35px;										
+									}
+								}
+								// .image-content {
+								// 	left: 0;
+								// 	text-align: center;
+								// 	overflow: auto;
+								// 	top: 0;
+									
+								// }										
+							}
+							.image-content-container:hover {
+							}
+						}
+					}
+					.tienTien-allPosts-double-img-container {
+						.tienTien-allPosts-double-left-img-container, .tienTien-allPosts-double-right-img-container {
+							.image {
+								.img-responsive {
+								}
+								.image-background {
+								}
+								.image-content-container {
+									left: 0;
+									right: 0;
+									text-align: center;
+									overflow: auto;
+									// top: 0;
+									bottom: 0;
+									height: 50%;
+									.image-header-content {
+										.image-content-title {
+											h6 {
+												// width: 240px;
+												font-size: 12px;
+												a {
+												}
+											}
+											p {
+												font-size: 12px;
+												// width: 240px;
+											}
+										}
+										.image-content-icon {
+											text-align: center;
+											display: inline-block;
+											.icon {
+												width: 36px;
+												height: 36px;
+											}
+										}
+									}
+									.image-body-content {
+										p {
+											font-size: 12px;
+											height: 35px;										
+										}
+									}
+									// .image-content {
+									// 	left: 0;
+									// 	right: 0;
+									// 	text-align: center;
+									// 	overflow: auto;
+									// 	top: 0;
+										
+									// }										
+								}
+								.image-content-container:hover {
+								}
+							}
+						}
+						.tienTien-allPosts-double-left-img-container {
+					    	padding: 0 20px 10px 20px;
+						}
+						.tienTien-allPosts-double-right-img-container {
+							padding: 0 20px 10px 20px;	
+						}
+					}
+				}
+			}
+			.tienTien-blog-content-container {
+				.tienTien-blog-body-content-container {				
+					.tienTien-blog-main-image-container {
+						.image {
+							.img-responsive {
+							}
+						}
+					}
+					.tienTien-blog-left-content-container, .tienTien-blog-right-content-container {
+					}
+					.tienTien-blog-left-content-container {
+
+						.left-content-title {
+							h1 {
+							}
+						}
+						.separator {
+						}
+					}
+					.tienTien-blog-right-content-container {
+						border-top: 1px solid #009dca;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: $screen-xs) and (max-width: 599px) {
+	#tienTien-blog {
+		.tienTien-blog-overall-container {
+			.tienTien-allPosts-content-container, .tienTien-blog-content-container {
+				.tienTien-allPosts-body-content-container, .tienTien-blog-body-content-container {
+					.form-inline {
+						// text-align: center;
+						.form-search-group {
+							margin-bottom: 10px;
+							.input-search-group {
+								.form-search {
+								}							
+								.input-group-btn {
+									.btn-search {						
+									}
+									
+								}
+							}
+						}
+						.form-icon-group {
+							.label-follow-us, .label-or {
+							}
+							.label-follow-us {
+							}
+							.label-or {
+								visibility: hidden;
+							}
+						}
+						.form-email-group {
+							margin-top: 10px;
+							.label-subcribe {
+							}
+							.input-email-group {
+								.form-email {
+								}
+								.input-group-btn {
+									.btn-submit {
+									}
+								}
+							}
+						}					
+					}
+				}
+			}
+			.tienTien-allPosts-content-container {
+				.tienTien-allPosts-body-content-container {					
+					.tienTien-allPosts-single-img-container {
+						.single-image {
+							height: 300px;
+							background-position: center;
+    						background-size: cover;
+							.img-responsive {
+								height: 100%;
+							}
+							.image-content-active {
+							}
+							.image-content-container {
+								.image-header-content {
+									.image-content-title {
+										float: left;
+										h6 {
+											width: 240px;
+											a {
+											}
+										}
+										p {
+											width: 240px;
+										}
+									}
+									.image-content-icon {
+										float: right;
+										.icon {
+											width: 36px;
+											height: 36px;
+										}
+									}
+								}
+								.image-body-content {
+									p {
+										height: 40px;										
+									}
+								}										
+							}
+							.image-content-container:hover {
+							}
+						}
+					}
+					.tienTien-allPosts-double-img-container {
+						.tienTien-allPosts-double-left-img-container, .tienTien-allPosts-double-right-img-container {
+							.image {
+								.img-responsive {
+								}
+								.image-background {
+								}
+								.image-content-container {
+									.image-header-content {
+										.image-content-title {
+											float: left;
+											h6 {
+												width: 240px;
+												a {
+												}
+											}
+											p {
+												width: 240px;
+											}
+										}
+										.image-content-icon {
+											float: right;
+											.icon {
+												width: 36px;
+												height: 36px;
+											}
+										}
+									}
+									.image-body-content {
+										p {
+											height: 40px;										
+										}
+									}										
+								}
+								.image-content-container:hover {
+								}
+							}
+						}
+						.tienTien-allPosts-double-left-img-container {
+					    	padding: 0 20px 10px 20px;
+						}
+						.tienTien-allPosts-double-right-img-container {
+							padding: 0 20px 10px 20px;	
+						}
+					}
+				}
+			}
+			.tienTien-blog-content-container {
+				.tienTien-blog-body-content-container {				
+					.tienTien-blog-main-image-container {
+						.image {
+							.img-responsive {
+							}
+						}
+					}
+					.tienTien-blog-left-content-container, .tienTien-blog-right-content-container {
+					}
+					.tienTien-blog-left-content-container {
+
+						.left-content-title {
+							h1 {
+							}
+						}
+						.separator {
+						}
+					}
+					.tienTien-blog-right-content-container {
+						border-top: 1px solid #009dca;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Min-width: 480px and max-width: 767px
+@media (min-width: 600px) and (max-width: $screen-xs-max) {
+	.navbar-collapse.in {
+		overflow-y: hidden;
+	}
+
+	.top-navbar {  
+	    .navbar-header {
+	    	.navbar-toggle {
+	    	}
+	    	.navbar-toggle:focus, .navbar-toggle:hover {
+	    	}
+	    	.navbar-header-image {
+	    	}
+	    }
+	    .navbar-nav > li > a {
+		}		
+	    .navbar-right {
+	    	// display: block;
+	    	background-color: #333;
+	    	width: 100%;
+	    	display: block;
+	    	position: absolute;
+	    	padding-left: 15px;
+			li {
+				.active:after {
+					top: 120px;
+				}
+			}
+			.search-group {
+				display: flex;
+				.li-search-button {
+				}
+			}	
+			.BSC-button-group {
+				margin-top: 15px;
+				.li-S-button, .li-C-button {
+				}
+			}
+			.signIn-Up-button-group {
+				display: flex;
+				margin-top: 10px;
+				.li-signIn {
+					a {
+					}
+					a:hover {
+					}
+				}
+				.li-or {
+				}
+				.btn, .btn-default {
+				}
+			} 
+		}
+	}
+	header {
+		.search-container, .industry-search-container {
+			.search-all-container {
+				.search-title-container {
+					display: block;
+					text-align: center;
+				}
+				.dropdown-container {
+					display: block;
+					text-align: center;
+					.dropdown {
+						.dropdown-menu {
+							left: 50%;
+							right: auto;
+							text-align: center;
+							transform: translate(-50%, 0);
+						}
+					}
+				}
+				.separator {				
+					margin-top: 20px;
+				}
+			}			
+		}
+		.carousel {
+			.carousel-indicators {
+			}
+			.carousel-inner {
+				height: 90vh;
+				.item, .active {
+					.item-image {
+						height: 90vh;
+						.img-responsive {
+							height: 100%;
+						}
+					}
+					.carousel-caption {
+					    bottom: 210px;
+    					transform: translate(50%, -210%);
+					    h1 {
+					    	font-size: 40px;
+						}
+						button {
+						}
+						.middle-content-container {					    
+							.middle-title-container {
+								
+							}
+							.middle-button-container {
+								
+							}
+						}
+						.bottom-content-container {
+						    bottom: -150px;
+    						transform: translate(-50%, 90%);
+						    .best-handcraft-text-container {
+						    }
+						    p {
+						    	a {
+						    		font-size: 12px;		    		
+						    	}
+						    }
+						}					
+					}								
+				}			 
+			}		
+		}		
+	}
+	#tienTien-blog {
+		.tienTien-blog-overall-container {
+			.tienTien-allPosts-content-container, .tienTien-blog-content-container {
+				.tienTien-allPosts-body-content-container, .tienTien-blog-body-content-container {
+					.form-inline {
+						// text-align: center;
+						.form-search-group {
+							margin-bottom: 10px;
+							.input-search-group {
+								.form-search {
+								}							
+								.input-group-btn {
+									.btn-search {						
+									}
+									
+								}
+							}
+						}
+						.form-icon-group {
+							.label-follow-us, .label-or {
+							}
+							.label-follow-us {
+							}
+							.label-or {
+								visibility: hidden;
+							}
+						}
+						.form-email-group {
+							margin-top: 10px;
+							.label-subcribe {
+							}
+							.input-email-group {
+								.form-email {
+								}
+								.input-group-btn {
+									.btn-submit {
+									}
+								}
+							}
+						}					
+					}
+				}
+			}
+			.tienTien-allPosts-content-container {
+				.tienTien-allPosts-body-content-container {					
+					.tienTien-allPosts-single-img-container {
+						.single-image {
+							height: 382px;
+							background-position: center;
+    						background-size: cover;
+							.img-responsive {
+								height: 100%;
+							}
+							.image-content-active {
+							}
+							.image-content-container {
+								.image-header-content {
+									.image-content-title {
+										float: left;
+										h6 {
+											width: 240px;
+											a {
+											}
+										}
+										p {
+											width: 240px;
+										}
+									}
+									.image-content-icon {
+										float: right;
+										.icon {
+											width: 36px;
+											height: 36px;
+										}
+									}
+								}
+								.image-body-content {
+									p {
+										height: 40px;										
+									}
+								}										
+							}
+							.image-content-container:hover {
+							}
+						}
+					}
+					.tienTien-allPosts-double-img-container {
+						.tienTien-allPosts-double-left-img-container, .tienTien-allPosts-double-right-img-container {
+							.image {
+								.img-responsive {
+								}
+								.image-background {
+								}
+								.image-content-container {
+									.image-header-content {
+										.image-content-title {
+											float: left;
+											h6 {
+												width: 240px;
+												a {
+												}
+											}
+											p {
+												width: 240px;
+											}
+										}
+										.image-content-icon {
+											float: right;
+											.icon {
+												width: 36px;
+												height: 36px;
+											}
+										}
+									}
+									.image-body-content {
+										p {
+											height: 40px;										
+										}
+									}										
+								}
+								.image-content-container:hover {
+								}
+							}
+						}
+						.tienTien-allPosts-double-left-img-container {
+					    	padding: 0 20px 10px 20px;
+						}
+						.tienTien-allPosts-double-right-img-container {
+							padding: 0 20px 10px 20px;	
+						}
+					}
+				}
+			}
+			.tienTien-blog-content-container {
+				.tienTien-blog-body-content-container {				
+					.tienTien-blog-main-image-container {
+						.image {
+							.img-responsive {
+							}
+						}
+					}
+					.tienTien-blog-left-content-container, .tienTien-blog-right-content-container {
+					}
+					.tienTien-blog-left-content-container {
+
+						.left-content-title {
+							h1 {
+							}
+						}
+						.separator {
+						}
+					}
+					.tienTien-blog-right-content-container {
+						border-top: 1px solid #009dca;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Min-width: 768px and max-width: 991px
+
+@media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
+	header {
+		.search-container, .industry-search-container {
+			.search-all-container {
+				.search-title-container {
+					display: block;
+					text-align: center;
+				}
+				.dropdown-container {
+					display: block;
+					text-align: center;
+					.dropdown {
+						.dropdown-menu {
+							left: 50%;
+							right: auto;
+							text-align: center;
+							transform: translate(-50%, 0);
+						}
+					}
+				}
+				.separator {				
+					margin-top: 20px;
+				}
+			}			
+		}
+		.carousel {
+			.carousel-indicators {
+			}
+			.carousel-inner {
+				height: 90vh;
+				.item, .active {
+					.item-image {
+						height: 90vh;
+						.img-responsive {
+							height: 100%;
+						}
+					}
+					.carousel-caption {
+					    h1 {
+						}
+						button {
+						}
+						.middle-content-container {					    
+							.middle-title-container {
+								
+							}
+							.middle-button-container {
+								
+							}
+						}
+						.bottom-content-container {
+						    .best-handcraft-text-container {
+						    }
+						    p {
+						    	a {		    		
+						    	}
+						    }
+						}					
+					}								
+				}			 
+			}		
+		}		
+	}
+
+	#tienTien-blog {
+		.tienTien-blog-overall-container {
+			.tienTien-allPosts-content-container, .tienTien-blog-content-container {
+				.tienTien-allPosts-body-content-container, .tienTien-blog-body-content-container {
+					.form-inline {
+						// text-align: center;
+						.form-search-group {
+							.input-search-group {
+								.form-search {
+								}							
+								.input-group-btn {
+									.btn-search {						
+									}
+									
+								}
+							}
+						}
+						.form-icon-group {
+							.label-follow-us, .label-or {
+							}
+							.label-follow-us {
+							}
+							.label-or {
+								visibility: hidden;
+							}
+						}
+						.form-email-group {
+							margin-top: 10px;
+							.label-subcribe {
+							}
+							.input-email-group {
+								.form-email {
+								}
+								.input-group-btn {
+									.btn-submit {
+									}
+								}
+							}
+						}					
+					}
+				}
+			}
+			.tienTien-allPosts-content-container {				
+				.tienTien-allPosts-body-content-container {					
+					.tienTien-allPosts-single-img-container {
+						.single-image {
+							height: 358px;
+							.img-responsive {
+								height: 100%;
+							}
+							.image-content-active {
+							}
+							.image-content-container {
+								width: 47%;
+								.image-header-content {
+									.image-content-title {
+										float: left;
+										h6 {
+											width: 240px;
+											a {
+											}
+										}
+										p {
+											width: 240px;
+										}
+									}
+									.image-content-icon {
+										float: right;
+										.icon {
+											width: 36px;
+											height: 36px;
+										}
+									}
+								}
+								.image-body-content {
+									p {
+										height: 40px;										
+									}
+								}										
+							}
+							.image-content-container:hover {
+							}
+						}
+					}
+					.tienTien-allPosts-double-img-container {
+						.tienTien-allPosts-double-left-img-container, .tienTien-allPosts-double-right-img-container {
+							.image {
+								.img-responsive {
+								}
+								.image-background {
+								}
+								.image-content-container {
+									.image-header-content {
+										.image-content-title {
+											float: left;
+											h6 {
+												width: 230px;
+												a {
+												}
+											}
+											p {
+												width: 230px;
+											}
+										}
+										.image-content-icon {
+											float: right;
+											.icon {
+												width: 36px;
+												height: 36px;
+											}
+										}
+									}
+									.image-body-content {
+										p {
+											height: 40px;										
+										}
+									}										
+								}
+								.image-content-container:hover {
+								}
+							}
+						}
+						.tienTien-allPosts-double-left-img-container {
+							padding: 10px 10px 10px 20px;							
+						}
+						.tienTien-allPosts-double-right-img-container {
+							padding: 10px 20px 10px 10px;
+						}
+					}
+				}
+			}
+			.tienTien-blog-content-container {
+				.tienTien-blog-body-content-container {				
+					.tienTien-blog-main-image-container {
+						.image {
+							.img-responsive {
+							}
+						}
+					}
+					.tienTien-blog-left-content-container, .tienTien-blog-right-content-container {
+					}
+					.tienTien-blog-left-content-container {
+
+						.left-content-title {
+							h1 {
+							}
+						}
+						.separator {
+						}
+					}
+					.tienTien-blog-right-content-container {
+						border-left: 1px solid #009dca;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Min-width: 992px and max-width: 1199px
+
+@media (min-width: $screen-md) and (max-width: $screen-md-max) {
+	header {
+		.industry-search-container, .search-container {
+			width: 100%;
+			.search-title-container {
+				transform: translateX(17%);
+				a {
+					color: $light-text-color;
+					text-transform: uppercase;
+				}
+			}
+			.dropdown-container {
+				.dropdown {					
+					right: 200px;
+				}
+			}
+			.separator {
+				transform: translateX(20%);
+				margin-right: 15%;				
+			}
+		}
+		.carousel {
+			.carousel-indicators {
+			}
+			.carousel-inner {
+				height: 90vh;
+				.item, .active {
+					.item-image {
+						height: 90vh;
+						.img-responsive {
+							height: 100%;
+						}
+					}
+					.carousel-caption {
+					    h1 {
+						}
+						button {
+						}
+						.middle-content-container {					    
+							.middle-title-container {
+								
+							}
+							.middle-button-container {
+								
+							}
+						}
+						.bottom-content-container {
+						    .best-handcraft-text-container {
+						    }
+						    p {
+						    	a {		    		
+						    	}
+						    }
+						}					
+					}								
+				}			 
+			}		
+		}		
+	}
+
+	#tienTien-blog {
+		.tienTien-blog-overall-container {
+			.tienTien-allPosts-content-container, .tienTien-blog-content-container {
+				.tienTien-allPosts-body-content-container, .tienTien-blog-body-content-container {
+					.form-inline {
+						// text-align: center;
+						.form-search-group {
+							.input-search-group {
+								.form-search {
+								}							
+								.input-group-btn {
+									.btn-search {						
+									}
+									
+								}
+							}
+						}
+						.form-icon-group {
+							.label-follow-us, .label-or {
+							}
+							.label-follow-us {
+							}
+							.label-or {
+							}
+						}
+						.form-email-group {
+							.label-subcribe {
+							}
+							.input-email-group {
+								.form-email {
+								}
+								.input-group-btn {
+									.btn-submit {
+									}
+								}
+							}
+						}					
+					}
+				}
+			}
+			.tienTien-allPosts-content-container {
+				.tienTien-allPosts-body-content-container {					
+					.tienTien-allPosts-single-img-container {
+						.single-image {
+							height: 358px;
+							.img-responsive {
+								height: 100%;
+							}
+							.image-content-active {
+							}
+							.image-content-container {
+								width: 47%;
+								.image-header-content {
+									.image-content-title {
+										float: left;
+										h6 {
+											width: 350px;
+											a {
+											}
+										}
+										p {
+											width: 350px;
+										}
+									}
+									.image-content-icon {
+										float: right;
+										.icon {
+											width: 36px;
+											height: 36px;
+										}
+									}
+								}
+								.image-body-content {
+									p {
+										height: 40px;										
+									}
+								}										
+							}
+							.image-content-container:hover {
+							}
+						}
+					}
+					.tienTien-allPosts-double-img-container {
+						.tienTien-allPosts-double-left-img-container, .tienTien-allPosts-double-right-img-container {
+							.image {
+								.img-responsive {
+								}
+								.image-background {
+								}
+								.image-content-container {
+									.image-header-content {
+										.image-content-title {
+											float: left;
+											h6 {
+												width: 340px;
+												a {
+												}
+											}
+											p {
+												width: 340px;
+											}
+										}
+										.image-content-icon {
+											float: right;
+											.icon {
+												width: 36px;
+												height: 36px;
+											}
+										}
+									}
+									.image-body-content {
+										p {
+											height: 40px;										
+										}
+									}										
+								}
+								.image-content-container:hover {
+								}
+							}
+						}
+						.tienTien-allPosts-double-left-img-container {
+							padding: 10px 10px 10px 20px;							
+						}
+						.tienTien-allPosts-double-right-img-container {
+							padding: 10px 20px 10px 10px;
+						}
+					}
+				}
+			}
+			.tienTien-blog-content-container {
+				.tienTien-blog-body-content-container {				
+					.tienTien-blog-main-image-container {
+						.image {
+							.img-responsive {
+							}
+						}
+					}
+					.tienTien-blog-left-content-container, .tienTien-blog-right-content-container {
+					}
+					.tienTien-blog-left-content-container {
+
+						.left-content-title {
+							h1 {
+							}
+						}
+						.separator {
+						}
+					}
+					.tienTien-blog-right-content-container {
+						border-left: 1px solid #009dca;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: $screen-lg) {
+	header {
+		.industry-search-container, .search-container {
+			width: 100%;
+			.search-title-container {
+				transform: translateX(17%);
+				a {
+					color: $light-text-color;
+					text-transform: uppercase;
+				}
+			}
+			.dropdown-container {
+				.dropdown {					
+					right: 200px;
+				}
+			}
+			.separator {
+				transform: translateX(20%);
+				margin-right: 15%;				
+			}
+		}
+		.carousel {
+			.carousel-indicators {
+			}
+			.carousel-inner {
+				height: 90vh;
+				.item, .active {
+					.item-image {
+						height: 90vh;
+						.img-responsive {
+							height: 100%;
+						}
+					}
+					.carousel-caption {
+					    h1 {
+						}
+						button {
+						}
+						.middle-content-container {					    
+							.middle-title-container {
+								
+							}
+							.middle-button-container {
+								
+							}
+						}
+						.bottom-content-container {
+						    .best-handcraft-text-container {
+						    }
+						    p {
+						    	a {		    		
+						    	}
+						    }
+						}					
+					}								
+				}			 
+			}		
+		}		
+	}
+
+	#tienTien-blog {
+		.tienTien-blog-overall-container {
+			.tienTien-allPosts-content-container, .tienTien-blog-content-container {
+				.tienTien-allPosts-body-content-container, .tienTien-blog-body-content-container {
+					.form-inline {
+						// text-align: center;
+						.form-search-group {
+							.input-search-group {
+								.form-search {
+									// width: 494px;
+								}							
+								.input-group-btn {
+									.btn-search {						
+									}
+									
+								}
+							}
+						}
+						.form-icon-group {
+							.label-follow-us, .label-or {
+							}
+							.label-follow-us {
+							}
+							.label-or {
+							}
+						}
+						.form-email-group {
+							.label-subcribe {
+							}
+							.input-email-group {
+								.form-email {
+									// width: 204px;
+								}
+								.input-group-btn {
+									.btn-submit {
+									}
+								}
+							}
+						}					
+					}
+				}
+			}
+			.tienTien-allPosts-content-container {
+				.tienTien-allPosts-body-content-container {					
+					.tienTien-allPosts-single-img-container {
+						.single-image {
+							height: 358px;
+							.img-responsive {
+							}
+							.image-content-active {
+							}
+							.image-content-container {
+								width: 47%;
+								.image-header-content {
+									.image-content-title {
+										float: left;
+										h6 {
+											width: 435px;
+											a {
+											}
+										}
+										p {
+											width: 435px;
+										}
+									}
+									.image-content-icon {
+										float: right;
+										.icon {
+											width: 36px;
+											height: 36px;
+										}
+									}
+								}
+								.image-body-content {
+									p {
+										height: 40px;										
+									}
+								}									
+							}
+							.image-content-container:hover {
+							}
+						}
+					}
+					.tienTien-allPosts-double-img-container {
+						.tienTien-allPosts-double-left-img-container, .tienTien-allPosts-double-right-img-container {
+							.image {
+								.img-responsive {
+								}
+								.image-background {
+								}
+								.image-content-container {
+									.image-header-content {
+										.image-content-title {
+											float: left;
+											h6 {
+												width: 435px;
+												a {
+												}
+											}
+											p {
+												width: 435px;
+											}
+										}
+										.image-content-icon {
+											float: right;
+											.icon {
+												width: 36px;
+												height: 36px;
+											}
+										}
+									}
+									.image-body-content {
+										p {
+											height: 40px;										
+										}
+									}										
+								}
+								.image-content-container:hover {
+								}
+							}
+						}
+						.tienTien-allPosts-double-left-img-container {
+							padding: 10px 10px 10px 20px;							
+						}
+						.tienTien-allPosts-double-right-img-container {
+							padding: 10px 20px 10px 10px;
+						}
+					}
+				}
+			}
+			.tienTien-blog-content-container {
+				.tienTien-blog-body-content-container {				
+					.tienTien-blog-main-image-container {
+						.image {
+							.img-responsive {
+							}
+						}
+					}
+					.tienTien-blog-left-content-container, .tienTien-blog-right-content-container {
+					}
+					.tienTien-blog-left-content-container {
+
+						.left-content-title {
+							h1 {
+							}
+						}
+						.separator {
+						}
+					}
+					.tienTien-blog-right-content-container {
+						border-left: 1px solid #009dca;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: $screen-xs-max) {}
+@media (min-width: $screen-sm) and (max-width: $screen-sm-max) {}
+@media (min-width: $screen-md) and (max-width: $screen-md-max) {}
+@media (min-width: $screen-lg) {
+
+}

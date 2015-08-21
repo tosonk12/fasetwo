@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta tags -->
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="CAMELIA description" />
+	<meta name="keywords" content="CAMELIA keywords" />
+	<meta name="author" content="CAMELIA name" />
+	<title>Phase 2</title>
+	<!-- CSS -->
+		
+	<link rel="stylesheet" href="assets/css/font-awesome/font-awesome.css">
+	<link rel="stylesheet" href="assets/css/mcustomscrollbar/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="assets/css/global.css">
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900,400italic&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+	<!-- <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/slick.css">
+	<!-- <link rel="stylesheet" href="assets/css/slick-theme.css"> -->
+	<!-- Script -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="assets/javascripts/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/javascripts/packery/packery.pkgd.min.js" type="text/javascript"></script>
+	<script src="assets/javascripts/slick/slick.min.js" type="text/javascript"></script>
+	<script src='assets/javascripts/mcustomscrollbar/jquery.mCustomScrollbar.concat.min.js'></script>
+	<!-- // <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> -->
+</head>
+<body>
+	<!-- FACBEOOK JavaScript SDK AREA-->
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<!-- End of FACBEOOK JavaScript SDK AREA-->
+	<!-- Navigation -->
+	<nav class="top-navbar navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="page-scroll" href="#page-top">
+                	<div class="navbar-header-image">
+                		<img src="assets/images/logos/fase-two-logo.png" alt="" class="img-responsive">
+                	</div>                	
+                </a>                                
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="li-search-button">
+                    	<a href=""><img src="assets/images/search-button.png" alt="" class="img-responsive"></a>
+                    </li>
+                    <li class="li-B-button">
+                    	<a href="tienTien-blog.html"><img src="assets/images/B-button.png" alt="" class="img-responsive"></a>
+                    </li>
+                    <li class="li-S-button">
+                    	<a href=""><img src="assets/images/S-button.png" alt="" class="img-responsive"></a>
+                    </li>
+                    <li class="li-C-button">
+                    	<a href=""><img src="assets/images/C-button.png" alt="" class="img-responsive"></a>
+                    </li>                    
+                    <li class="li-signIn">
+                        <a href="#contact" class="">log in</a>
+                    </li>
+                    <li class="li-or">or</li>
+                    <li class="page-scroll">
+                        <button class="btn btn-default" type="submit">sign up free</button>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+	<header>
+		<div class="industry-search-container container">
+	    	<div class="row">
+	    		<div class="search-all-container">
+	    			<div class="col-md-10">
+		    			<div class="search-title-container">
+		    				<a href="">search your fase2 supplier</a>	
+		    			</div>	    			
+		    		</div>
+		    		<div class="col-md-2">
+		    			<div class="dropdown-container">
+		    				<div class="dropdown">
+								<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									pick an industry
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+									<li class="dropdown-header">Dropdown header</li>
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Another action</a></li>
+									<li><a href="#">Something else here</a></li>
+									<li role="separator" class="divider"></li>
+									<li class="dropdown-header">Dropdown header</li>
+									<li><a href="#">Separated link</a></li>
+								</ul>
+							</div>
+		    			</div>	    			
+		    		</div>
+		    		<div class="col-md-10">	    			
+	    				<div class="separator"></div>		    			
+		    		</div>
+	    		</div>	    		
+	    	</div>
+	    </div>
+	    <div id="carousel-example" class="carousel slide" data-ride="carousel">
+	  		<ol class="carousel-indicators">
+	    		<li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+			    <li data-target="#carousel-example" data-slide-to="1"></li>
+			    <li data-target="#carousel-example" data-slide-to="2"></li>
+			    <li data-target="#carousel-example" data-slide-to="3"></li>
+	  		</ol>
+
+	  		<div class="carousel-inner">
+	    		<div class="item active">
+	    			<div class="item-image">
+	    				<a href="#"><img src="assets/images/tex-giang/TEX GIANG (1).JPG" class="img-responsive" /></a>
+	    			</div>	      			
+	      			<div class="carousel-caption">	      				
+						<h1>- handcraft of vietnam -</h1>
+						<button class="btn btn-default">Check it out</button>
+						<div class="bottom-content-container container">
+							<div class="row">
+								<div class="best-handcraft-text-container col-sm-3">
+									<hr>
+									<p><a href="">best handcraft furnitures from vietnam</a></p>
+								</div>
+								<div class="col-sm-3">
+									<hr>
+									<p><a href="">top furniture companies in vietnam</a></p>
+								</div>
+								<div class="col-sm-3">
+									<hr>
+									<p><a href="">30 tips import / export from vietnam to us</a></p>
+								</div>
+								<div class="col-sm-3">
+									<hr>
+									<p><a href="">why choose fase2?</a></p>
+								</div>
+							</div>
+						</div>
+	      			</div>
+	    		</div>
+	    		<div class="item">
+	      			<div class="item-image">
+	    				<a href="#"><img src="assets/images/tex-giang/TEX GIANG (2).JPG" class="img-responsive" /></a>
+	    			</div>
+	      			<div class="carousel-caption">
+		      			<h1>- handcraft of vietnam -</h1>
+						<button class="btn btn-default">Check it out</button>
+						<div class="bottom-content-container container">
+							<div class="row">
+								<div class="best-handcraft-text-container col-sm-3">
+									<hr>
+									<p><a href="">best handcraft furnitures from vietnam</a></p>
+								</div>
+								<div class="col-sm-3">
+									<hr>
+									<p><a href="">top furniture companies in vietnam</a></p>
+								</div>
+								<div class="col-sm-3">
+									<hr>
+									<p><a href="">30 tips import / export from vietnam to us</a></p>
+								</div>
+								<div class="col-sm-3">
+									<hr>
+									<p><a href="">why choose fase2?</a></p>
+								</div>
+							</div>
+						</div>						
+	      			</div>
+	    		</div>
+	    		<div class="item">
+	      			<div class="item-image">
+	    				<a href="#"><img src="assets/images/tex-giang/TEX GIANG (4).JPG" class="img-responsive" /></a>
+	    			</div>
+	      			<div class="carousel-caption">
+	      				<h1>- handcraft of vietnam -</h1>
+						<button class="btn btn-default">Check it out</button>
+						<div class="bottom-content-container container">
+							<div class="row">
+								<div class="best-handcraft-text-container col-sm-3">
+									<hr>
+									<p><a href="">best handcraft furnitures from vietnam</a></p>
+								</div>
+								<div class="col-sm-3">
+									<hr>
+									<p><a href="">top furniture companies in vietnam</a></p>
+								</div>
+								<div class="col-sm-3">
+									<hr>
+									<p><a href="">30 tips import / export from vietnam to us</a></p>
+								</div>
+								<div class="col-sm-3">
+									<hr>
+									<p><a href="">why choose fase2?</a></p>
+								</div>
+							</div>
+						</div>
+	      			</div>
+	    		</div>
+	    		<div class="item">
+	      			<div class="item-image">
+	    				<a href="#"><img src="assets/images/tex-giang/TEX GIANG (4).JPG" class="img-responsive" /></a>
+	    			</div>
+	      			<div class="carousel-caption">
+	      				<h1>- handcraft of vietnam -</h1>
+						<button class="btn btn-default">Check it out</button>
+						<div class="bottom-content-container container">
+							<div class="row">
+								<div class="best-handcraft-text-container col-sm-3">
+									<hr>
+									<p><a href="">best handcraft furnitures from vietnam</a></p>
+								</div>
+								<div class="col-sm-3">
+									<hr>
+									<p><a href="">top furniture companies in vietnam</a></p>
+								</div>
+								<div class="col-sm-3">
+									<hr>
+									<p><a href="">30 tips import / export from vietnam to us</a></p>
+								</div>
+								<div class="col-sm-3">
+									<hr>
+									<p><a href="">why choose fase2?</a></p>
+								</div>
+							</div>
+						</div>
+	      			</div>
+	    		</div>
+	  		</div>
+
+		  	<a class="left carousel-control" href="#carousel-example" data-slide="prev">
+		    	<span class="glyphicon glyphicon-chevron-left"></span>
+		  	</a>
+		  	<a class="right carousel-control" href="#carousel-example" data-slide="next">
+		    	<span class="glyphicon glyphicon-chevron-right"></span>
+		  	</a>
+		</div>
+	</header>
+	<div id="main" class="main">
+		<div class="main-content-container container">
+			<div class="row">
+				<div class="our-industries-container">
+					<div class="our-industries-title-container">
+						<span>our industries</span>
+					</div>
+					<div class="our-industries-content-container">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lobortis, enim malesuada laoreet hendrerit, sapien ipsum mattis ipsum, eget euismod orci diam vitae risus. Proin nec fringilla nibh. Sed placerat libero in leo interdum ornare id at sapien. Morbi lacinia augue vitae convallis fringilla. Aenean vel egestas nulla, varius rhoncus sem. Fusce a nibh a felis dapibus hendrerit. Donec luctus auctor vehicula.</p>
+					</div>
+					<div class="our-industries-tab-container container">
+						<div class="row">
+							<div class="col-md-3 col-sm-6">
+								<a href="#" class="our-industries-tab-content">
+									<p>12 companies</p>
+								</a>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<a href="#" class="our-industries-tab-content">
+									<p>Pottery</p>
+								</a>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<a href="#" class="our-industries-tab-content">
+									<p>Food</p>
+								</a>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<a href="#" class="our-industries-tab-content">
+									<p>Crafts</p>
+								</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-3 col-sm-6">
+								<a href="#" class="our-industries-tab-content">
+									<p>Developer</p>
+								</a>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<a href="#" class="our-industries-tab-content">
+									<p>Designer</p>
+								</a>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<a href="#" class="our-industries-tab-content">
+									<p>Coming soon</p>
+								</a>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<a href="#" class="our-industries-tab-content">
+									<p>Coming soon</p>
+								</a>
+							</div>
+						</div>						
+					</div>
+				</div>
+				<div class="feature-companies-container">
+					<div class="feature-companies-title-container">
+						<span>feature companies</span>
+					</div>
+					<div class="feature-companies-content-container">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas lobortis, enim malesuada laoreet hendrerit, sapien ipsum mattis ipsum, eget euismod orci diam vitae risus. Proin nec fringilla nibh. Sed placerat libero in leo interdum ornare id at sapien. Morbi lacinia augue vitae convallis fringilla. Aenean vel egestas nulla, varius rhoncus sem. Fusce a nibh a felis dapibus hendrerit. Donec luctus auctor vehicula.</p>
+					</div>
+					<div class="feature-companies-thumbnail-container container">
+						<div class="row">
+							<div class="col-md-3 col-sm-6">
+								<div class="thumbnail">
+									<img src="assets/images/tex-giang/TEX GIANG (47).JPG" alt="" class="img-responsive">                   
+			                        <div class="caption">
+			                        	<div class="caption-small-title">
+			                        		<p>furniture</p>
+			                        	</div>
+			                            <div class="caption-title">
+			                            	<h4><a href="texGiang-aboutUS.html">Tex-giang company</a></h4>
+			                            </div>                            
+			                            <div class="separator"></div>
+										<div class="caption-content">
+											<p>Established: March 2007</p>
+											<p>Experience in Export: since March 2007</p>
+											<p>Trade Capacity: 1 million units</p>
+											<p>Services Provides: 7</p>
+											<span><a href="">Furniture </a><a href="">Wood making </a><a href="">Table Chairs </a><a href="">Sample</a></span>
+										</div>
+										<div class="caption-views">
+											<p>View: 8000 | Appreciated: 400</p>
+										</div>                        
+			                        </div>
+			                    </div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="thumbnail">
+									<img src="http://lorempixel.com/200/200/" alt="" class="img-responsive">                   
+			                        <div class="caption">
+			                        	<div class="caption-small-title">
+			                        		<p>furniture</p>
+			                        	</div>
+			                            <div class="caption-title">
+			                            	<h4><a href="navifico-aboutUS.html">Navifico</a></h4>
+			                            </div>                            
+			                            <div class="separator"></div>
+										<div class="caption-content">
+											<p>Established: 1988</p>
+											<p>Experience in Export: 7 years</p>
+											<p>Trade Capacity: US, EU, Asia</p>
+											<p>Services Provides: 7</p>
+											<span><a href="">Furniture </a><a href="">Wood making </a><a href="">Table Chairs </a><a href="">Sample</a></span>
+										</div>
+										<div class="caption-views">
+											<p>View: 8000 | Appreciated: 400</p>
+										</div>                        
+			                        </div>
+			                    </div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="thumbnail">
+									<img src="http://lorempixel.com/200/200/" alt="" class="img-responsive">                   
+			                        <div class="caption">
+			                        	<div class="caption-small-title">
+			                        		<p>furniture</p>
+			                        	</div>
+			                            <div class="caption-title">
+			                            	<h4><a href="tienTien-aboutUS.html">Tien tien</a></h4>
+			                            </div>                            
+			                            <div class="separator"></div>
+										<div class="caption-content">
+											<p>Established: 1988</p>
+											<p>Experience in Export: 7 years</p>
+											<p>Trade Capacity: US, EU, Asia</p>
+											<p>Services Provides: 7</p>
+											<span><a href="">Furniture </a><a href="">Wood making </a><a href="">Table Chairs </a><a href="">Sample</a></span>
+										</div>
+										<div class="caption-views">
+											<p>View: 8000 | Appreciated: 400</p>
+										</div>                        
+			                        </div>
+			                    </div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="thumbnail">
+									<img src="http://lorempixel.com/200/200/" alt="" class="img-responsive">                   
+			                        <div class="caption">
+			                        	<div class="caption-small-title">
+			                        		<p>furniture</p>
+			                        	</div>
+			                            <div class="caption-title">
+			                            	<h4><a href="vietVuong-aboutUS.html">Viet Vuong</a></h4>
+			                            </div>                            
+			                            <div class="separator"></div>
+										<div class="caption-content">
+											<p>Established: 1988</p>
+											<p>Experience in Export: 7 years</p>
+											<p>Trade Capacity: US, EU, Asia</p>
+											<p>Services Provides: 7</p>
+											<span><a href="">Furniture </a><a href="">Wood making </a><a href="">Table Chairs </a><a href="">Sample</a></span>
+										</div>
+										<div class="caption-views">
+											<p>View: 8000 | Appreciated: 400</p>
+										</div>                        
+			                        </div>
+			                    </div>
+							</div>				
+						</div>
+						<div class="row">
+							<div class="col-md-3 col-sm-6">
+								<div class="thumbnail">
+									<img src="http://lorempixel.com/200/200/" alt="" class="img-responsive">                   
+			                        <div class="caption">
+			                        	<div class="caption-small-title">
+			                        		<p>furniture</p>
+			                        	</div>
+			                            <div class="caption-title">
+			                            	<h4><a href="#">habitables</a></h4>
+			                            </div>                            
+			                            <div class="separator"></div>
+										<div class="caption-content">
+											<p>Established: 1988</p>
+											<p>Experience in Export: 7 years</p>
+											<p>Trade Capacity: US, EU, Asia</p>
+											<p>Services Provides: 7</p>
+											<span><a href="">Furniture </a><a href="">Wood making </a><a href="">Table Chairs </a><a href="">Sample</a></span>
+										</div>
+										<div class="caption-views">
+											<p>View: 8000 | Appreciated: 400</p>
+										</div>                        
+			                        </div>
+			                    </div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="thumbnail">
+									<img src="http://lorempixel.com/200/200/" alt="" class="img-responsive">                   
+			                        <div class="caption">
+			                        	<div class="caption-small-title">
+			                        		<p>furniture</p>
+			                        	</div>
+			                            <div class="caption-title">
+			                            	<h4><a href="#">habitables</a></h4>
+			                            </div>                            
+			                            <div class="separator"></div>
+										<div class="caption-content">
+											<p>Established: 1988</p>
+											<p>Experience in Export: 7 years</p>
+											<p>Trade Capacity: US, EU, Asia</p>
+											<p>Services Provides: 7</p>
+											<span><a href="">Furniture </a><a href="">Wood making </a><a href="">Table Chairs </a><a href="">Sample</a></span>
+										</div>
+										<div class="caption-views">
+											<p>View: 8000 | Appreciated: 400</p>
+										</div>                        
+			                        </div>
+			                    </div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="thumbnail">
+									<img src="http://lorempixel.com/200/200/" alt="" class="img-responsive">                   
+			                        <div class="caption">
+			                        	<div class="caption-small-title">
+			                        		<p>furniture</p>
+			                        	</div>
+			                            <div class="caption-title">
+			                            	<h4><a href="#">habitables</a></h4>
+			                            </div>                            
+			                            <div class="separator"></div>
+										<div class="caption-content">
+											<p>Established: 1988</p>
+											<p>Experience in Export: 7 years</p>
+											<p>Trade Capacity: US, EU, Asia</p>
+											<p>Services Provides: 7</p>
+											<span><a href="">Furniture </a><a href="">Wood making </a><a href="">Table Chairs </a><a href="">Sample</a></span>
+										</div>
+										<div class="caption-views">
+											<p>View: 8000 | Appreciated: 400</p>
+										</div>                        
+			                        </div>
+			                    </div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="thumbnail">
+									<img src="http://lorempixel.com/200/200/" alt="" class="img-responsive">                   
+			                        <div class="caption">
+			                        	<div class="caption-small-title">
+			                        		<p>furniture</p>
+			                        	</div>
+			                            <div class="caption-title">
+			                            	<h4><a href="#">habitables</a></h4>
+			                            </div>                            
+			                            <div class="separator"></div>
+										<div class="caption-content">
+											<p>Established: 1988</p>
+											<p>Experience in Export: 7 years</p>
+											<p>Trade Capacity: US, EU, Asia</p>
+											<p>Services Provides: 7</p>
+											<span><a href="">Furniture </a><a href="">Wood making </a><a href="">Table Chairs </a><a href="">Sample</a></span>
+										</div>
+										<div class="caption-views">
+											<p>View: 8000 | Appreciated: 400</p>
+										</div>                        
+			                        </div>
+			                    </div>
+							</div>				
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		
+	</footer>
+	<script>
+		$(".our-industries-tab-content").click(function() {
+			window.location = $(this).find("a").attr("href");
+			return false;
+		});
+	</script>    	
+</body>
+</html>

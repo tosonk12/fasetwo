@@ -1,0 +1,166 @@
+@import "font";
+
+// Font family
+$font-family: 'proxima_nova';
+$font-family-2: 'proxima_nova_soft';
+$font-icon: 'FontAwesome';
+
+// Font size
+// FONT SIZE BASE
+$font-size-base:          	14px;
+
+$font-size-larger-extra-largest: floor(($font-size-base * 4.65)); // ~65px
+$font-size-large-extra-largest:  floor(($font-size-base * 3.85)); // ~54px
+$font-size-extra-largest:		 floor(($font-size-base * 3.2)); // ~44px
+$font-size-small-extra-largest:	 ceil(($font-size-base * 2.85)); // ~40px
+
+$font-size-largest:				 floor(($font-size-base * 2.6)); // ~36px
+$font-size-larger:				 floor(($font-size-base * 2.15)); // ~30px
+$font-size-large:				 ceil(($font-size-base * 1.7)); // ~24px
+$font-size-medium:				 ceil(($font-size-base * 1.25)); // ~18px
+$font-size-normal:				 $font-size-base;
+$font-size-small:				 ceil(($font-size-base * 0.85)); // ~12px
+// FONT SIZE CUSTOM
+$font-size-custom: 				13px;
+
+$font-size-custom-large:		floor(($font-size-custom * 1.5)); // ~20px
+$font-size-custom-medium:		floor(($font-size-custom * 1.2)); // ~15px
+$font-size-custom-normal:		$font-size-custom;
+$font-size-custom-small:		ceil(($font-size-custom * 0.85)); // ~11px
+
+// Color 
+$primary-color1: 			#e91e63;
+$primary-color2: 			#0065b3;
+$gray-color: 				#FBFBFB;
+$light-background-color: 	#fff;
+$dark-background-color:		#043851;
+$darkest-background-color: 	#3c3c3c;
+$custom-color: 				#2cb0e7;
+$shadow-color: 				#111;
+$dark-cyan-background-color: #4C866D;
+$dark-cyan-background-color-2: #1d7f4c;
+$very-dark-cyan-background-color: #206747;
+$very-dark-desaturated-cyan-background-color:	#31624C;
+$dark-moderate-cyan-background-color:	#347557;
+
+// Text color
+$light-text-color:			#fff;
+$dark-text-color: 			#043851;
+$darkest-text-color: 		#3c3c3c;
+$light-green-text-color:	#5AAD03;
+$very-dark-cyan-text-color:	#1F6646;
+$very-dark-cyan-text-color-2:	#1f6747;
+$dark-moderate-blue-text-color: #35589C;
+$very-soft-blue-text-color:	#B6DBEB;
+$soft-blue-text-color:	#53A8E1;
+$soft-red-text-color: #F3724B;
+$mostly-desaturated-dark-cyan-text-color:	#528870;
+$dark-grayish-cyan-text-color:	#799F8D;
+$grayish-cyan-text-color:	#ADC4BA;
+$dark-moderate-red-text-color: #a34949;
+
+// Border color
+$default-border-color:		#ccc;
+$light-border-color:		#fff;
+$dark-border-color: 		#043851;
+$darkest-border-color: 	#3c3c3c;
+$very-light-gray-border-color:		#EDEDED;
+$grayish-cyan-border-color:	#A9C5B9;
+
+// Mixing
+@mixin promo-content($color) {
+	background-color: $color;
+	.cell {
+		.btn-view-more {
+			color: $color;
+			&:before {
+				background-color: $color;
+			}
+		}
+		.btn-transparent {
+			&.active {
+				border-color: $color;
+				color: $color;
+			}
+		}
+	}
+	&:before {
+		background-color: $color;
+	}
+	&:hover, &:focus {
+		.cell {
+			h1, h2, h3, h4, h5, h6 {
+				color: $color;
+			}
+		}
+		.btn-transparent {
+			border-color: $color;
+			color: $color;
+			&.active {
+				background-color: $color;
+			}
+		}
+	}	
+}
+
+@mixin generate-trainer-color($color) {
+	background-color: $color;
+	&:hover, &:focus {
+		.table {
+			.cell {
+				h4, p {
+					color: $color;
+				}
+			}
+		}
+	}	
+}
+
+@mixin right-triangle($size, $color, $alpha) {
+	border: {
+		top: $size solid transparent;
+		bottom: 0;
+		right: 0;
+		left: $size solid $color;
+	}
+	@include opacity($alpha);
+}
+
+@mixin background-opacity($color, $opacity: 0.8) {
+    background: $color;
+    background: rgba($color, $opacity);
+}
+
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }  
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }  
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};      
+}
+
+@mixin transition($transition) {
+	-webkit-transition: #{$transition};
+	-moz-transition: #{$transition};
+	-ms-transition: #{$transition};
+	-o-transition: #{$transition};
+	transition: #{$transition};
+}
